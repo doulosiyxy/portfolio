@@ -1,6 +1,9 @@
 //mobile settings
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {	
   $('#main-nav').css('margin-left', 'auto');
+  if($(window).width() < 321) {
+    $('#logo').css('font-size', '25px');
+  }
   $(window).on('scroll', function() {
     var currPos = $(document).scrollTop();
       if(currPos < 300) {
