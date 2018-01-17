@@ -1,9 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
 /*scroll to top button*/
 #myBtn {
   font-weight: bold;
   display: none;
   position: fixed;
-  bottom: 25px;
+  bottom: 75px;
   right: 5px;
   z-index: 1001;
   border: none;
@@ -13,44 +17,22 @@
   cursor: pointer;
   padding: 15px 15px 10px 15px;
   border-radius: 0;
-  opacity: 0.8;
-  
+  opacity: 0.8; 
 }
 
 #myBtn:hover {
   background-color: #555;
 }
-/*scroll to top button end*/
-
-
-.social:hover {
-   fill: #000000;
-   cursor: pointer;
-}
-
-#contact a {
-   color: white;
-   text-decoration: none;
-   text-shadow: 0.25px 0.25px 0.25px #000000;
-}
-
-#contact a:hover {
-  text-shadow: 0.25px 0.25px 0.25px #000000;
-  text-decoration: none;
-  color: rgb(47,144,235);
-}
 
 body {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  
+  font-weight: 300; 
 }
 
 header {
   padding: 20px 0;
   z-index: 1;
   position: relative;
-  
 }
 
 header .row,
@@ -81,40 +63,38 @@ header p {
 
 /*menu bars*/
 .bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px -5px;
-    transition: 0.4s;
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px -5px;
+  transition: 0.4s;
 }
 
 .menu-container {
-    display: inline-block;
-    cursor: pointer;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
 }
 
 .change .bar2 {
-	opacity: 0;
-	}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+  opacity: 0;
 }
 
-#hidden-nav {
-	/*box-shadow: inset 0px 1px 40px #8d8d8d;*/ 
-	background-color: black;
-	width: 100%;
-	text-align: center;
-	padding: 10px 0px;
-	display: none;
-	
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+#hidden-nav { 
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0px;
+  display: none;
 }
 	
 #hidden-nav span a {
@@ -128,11 +108,11 @@ header p {
 }
 
 #hidden-nav span a:hover {
-	color: rgb(47,144,235);
+  color: rgb(47,144,235);
 }
 
 #nav {
-	margin: auto;
+  margin: auto;
 }
 
 .jumbotron {
@@ -198,118 +178,22 @@ figure img {
 }
 
 .details-description {
-	font-size: 20px;
-	font-weight: 400;
-	line-height: 18px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 18px;
 }
-
-#painting {
-    background-color: WhiteSmoke;
-    width: 400px;
-    height: 400px;
-    margin-top: 0px;
-    /*box-shadow: 10px 10px 10px #8d8d8d;*/
-    border: 10px solid black;
-    box-sizing: content-box;
-    opacity: 0;
-    transition: 3s ease-in-out;
-}
-
-
 
 .animate {
   position: relative;
   margin-top: 100px;
   opacity: 0;
   transition-timing-function: ease-in-out;
-  /*transition: 1.7s ease-in-out; 
-  animation-fill-mode: fowards; 
-  -webkit-animation-fill-mode: fowards;
-  -moz-animation-fill-mode: fowards;*/
-  
 }
 
 .animate2 {
   position: relative;
   margin-top: 100px;
-  /*transition: 1.7s ease-in-out;
-  animation-fill-mode: fowards; 
-  -webkit-animation-fill-mode: fowards;
-  -moz-animation-fill-mode: fowards;*/
 }
-
-#toprow {
-    height: 290px;
-    
-}
-
-#bigbox {
-    width: 290px;
-    height: 290px;
-    background-color: #c2c2c2;
-}
-
-#divider1 {
-    height: 290px;
-    width: 10px;
-}
-
-.right {
-    float: right;
-}
-
-.black {
-    background-color: black;
-}
-
-.mediumbox {
-    width: 100px;
-    height: 140px;
-    background-color: DarkSlateGrey;
-}
-
-#divider2 {
-    height: 10px;
-    width: 100px;
-}
-
-#middlerow {
-    width: 400px;
-    height: 110px;
-}
-
-#divider3 {
-    width: 400px;
-    height: 10px;
-}
-
-#rightbox {
-  width: 100px;
-  height: 100px;
-  background-color: #2f90eb;
-}
-
-#divider4 {
-    width: 10px;
-    height: 100px;
-}
-
-#centrebox {
-  width: 180px;
-  height: 100px;
-}
-
-#divider5 {
-    width: 10px;
-    height: 100px;
-}
-
-#leftbox {
-  width: 100px;
-  height: 100px;
-  background-color: #c2c2c2;
-}
-
 
 section .row img {
   margin: 0 0 30px;
@@ -330,8 +214,7 @@ section .row img {
   transition: 0 ease-in-out;
   animation-name: h3;
   animation-duration: 2s;
-  box-shadow: 0px 10px 40px #8d8d8d inset;
-  
+  box-shadow: 0px 10px 40px #8d8d8d inset; 
 }
 
 .btn.btn-primary:hover {
@@ -372,29 +255,18 @@ footer li img {
 }
 
 .linkedin-icon {
-	opacity: .6 !important;
+  opacity: .6 !important;
 }
 
-/*just for fun page
-
+/*widget page
 digitalclock*/
-
 #all {
   width: 100%;
   height: 100%;
 }
 
-/*
-.even {
-    background-color: #80d4ea;
-}
-
-.odd {
-  background-color: #c2c2c2;
-}*/
-
 .gradient {
-	box-shadow: 0px 1px 40px #8d8d8d;
+  box-shadow: 0px 1px 40px #8d8d8d;
 }
 
 #clock-wrap {
@@ -413,66 +285,64 @@ digitalclock*/
 }
 
 #clock {
-    height: 10%;
-    width: 100%;	
-    margin: auto;
-    position: relative;
-    top: 0; left: 0; bottom: 0; right: 0;
-    padding-top: 15px;
-    font-family: courier, monospace;
-    text-align: center;
-    color: white;
-    font-size: 30px;
+  height: 10%;
+  width: 100%;	
+  margin: auto;
+  position: relative;
+  top: 0; left: 0; bottom: 0; right: 0;
+  padding-top: 15px;
+  font-family: courier, monospace;
+  text-align: center;
+  color: white;
+  font-size: 30px;
 }
 
 #day {
-    height: 10%;
-    width: 100%;
-    margin: auto;
-    position: relative;
-    padding-top: 0;
-    top: 0; left: 0; bottom: 0; right: 0;
-    font-family: courier, monospace;
-    text-align: center;
-    color: white;
-    font-size: 40px;
-    text-transform: uppercase;
+  height: 10%;
+  width: 100%; 
+  margin: auto;
+  position: relative;
+  padding-top: 0;
+  top: 0; left: 0; bottom: 0; right: 0;
+  font-family: courier, monospace;
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  text-transform: uppercase;
 }
 
 #date {
-    height: 10%;
-    width: 100%;
-    margin: auto;
-    position: relative;
-    padding-top: 20px;
-    top: 0; left: 0; bottom: 0; right: 0;
-    font-family: courier, monospace;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    text-transform: uppercase;
+  height: 10%;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  padding-top: 20px;
+  top: 0; left: 0; bottom: 0; right: 0;
+  font-family: courier, monospace;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
 }
-
-
 
 /*instrument*/
 #instrument {
-    background: black;
-    height: auto;
-    width: inherit;
-    margin: auto;
-    position: relative;
-    padding: 10% 0%;
-    box-shadow: 0px 1px 40px #8d8d8d;
+  background: black;
+  height: auto;
+  width: inherit;
+  margin: auto;
+  position: relative;
+  padding: 10% 0%;
+  box-shadow: 0px 1px 40px #8d8d8d;
 }
 
 .box {
-    width: 90px;
-    height: 90px;
-    margin-left: 10px;
-    margin-top: 6px;
-    display: inline-block;
-    border-radius: 10px;
+  width: 90px;
+  height: 90px;
+  margin-left: 10px;
+  margin-top: 6px;
+  display: inline-block;
+  border-radius: 10px;
 }
 
 .fun-title {
@@ -491,23 +361,23 @@ digitalclock*/
 }
 
 #c {
-    background-color: #3e181b;
-    border: 3px solid #db1d2d;
+  background-color: #3e181b;
+  border: 3px solid #db1d2d;
 }
 
 #d {
-    background-color: #422018;
-    border: 3px solid #f0421c;
+  background-color: #422018;
+  border: 3px solid #f0421c;
 }
 
 #e {
-    background-color: #45391b;
-    border: 3px solid #fec02d;
+  background-color: #45391b;
+  border: 3px solid #fec02d;
 }
 
 #f {
-    background-color: #193c29;
-    border: 3px solid #20d071;
+  background-color: #193c29;
+  border: 3px solid #20d071;
 }
 
 #g {
@@ -516,81 +386,78 @@ digitalclock*/
 }
 
 #a {
-    background-color: #331f35;
-    border: 3px solid #a13fad;
+  background-color: #331f35;
+  border: 3px solid #a13fad;
 } 
 
 #b {
-    background-color: #43293d;
-    border: 3px solid #f26fd4;
+  background-color: #43293d;
+  border: 3px solid #f26fd4;
 }
 
 /* hover*/ 
 
 #c:hover {
-    background-color:#661920;
-    cursor: pointer;
+  background-color:#661920;
+  cursor: pointer;
 }
 #d:hover {
-    background-color:#6e2819;
-    cursor: pointer;
+  background-color:#6e2819;
+  cursor: pointer;
 }
 #e:hover {
-    background-color:#735b20;
-    cursor: pointer;
+  background-color:#735b20;
+  cursor: pointer;
 }
 #f:hover {
-    background-color:#1b613b;
-    cursor: pointer;
+  background-color:#1b613b;
+  cursor: pointer;
 }
 #g:hover {
-    background-color:#184d65;
-    cursor: pointer;
+  background-color:#184d65;
+  cursor: pointer;
 }
 #a:hover {
-    background-color:#4e2753;
-    cursor: pointer;
+  background-color:#4e2753;
+  cursor: pointer;
 }
 #b:hover {
-    background-color:#6f3a62;
-    cursor: pointer;
+  background-color:#6f3a62;
+  cursor: pointer;
 }
-
 #c:active {
-    background-color:#db1d2d;   
+  background-color:#db1d2d;   
 }
 #d:active {
-    background-color:#f0421c;   
+  background-color:#f0421c;   
 }
 #e:active {
-    background-color:#fec02d;   
+  background-color:#fec02d;   
 }
 #f:active {
-    background-color:#20d071;   
+  background-color:#20d071;   
 }
 #g:active {
-    background-color:#1a9ddb;   
+  background-color:#1a9ddb;   
 }
 #a:active {
-    background-color:#a13fad;   
+  background-color:#a13fad;   
 }
 #b:active {
-    background-color:#f26fd4;   
+  background-color:#f26fd4;   
 }
 
 #instrument h1 {
-color: white;
-opacity: .1;
-font-family: sans-serif;
-width: 100%;
-padding-top: 3%;
-text-align: center;
-position: relative;
-
+  color: white;
+  opacity: .1;
+  font-family: sans-serif;
+  width: 100%;
+  padding-top: 3%;
+  text-align: center;
+  position: relative;
 }
 
 /*Sun and moon*/
-
 .sun {
   background-color: #ffdd00;
   border: 5px solid #f1c40f;
@@ -598,8 +465,7 @@ position: relative;
 }
 
 .sun:hover {
-    /*border: 10px solid #f1c40f;*/
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .moon {
@@ -609,78 +475,75 @@ position: relative;
 }
 
 .moon:hover {
- /*border: 10px solid #eaeff2;*/
- cursor: pointer;
+  cursor: pointer;
 }
 
 .night {
-    background-color: #2c3e50;
+  background-color: #2c3e50;
 }
 
 .day {
-    background-color: #37d8e6;
+  background-color: #37d8e6;
 }
 
 #orb {
-    height: 230px;
-    width: 230px;
-    border-radius: 100%;
-    padding: 20px;
-    margin: 50px auto;
-    position: relative;
-    z-index: 2;
-    background-color: #blue;
-    transition: .5s ease-in-out;
-    box-sizing: content-box;
-    box-shadow: 0px 1px 40px #8d8d8d;
+  height: 230px;
+  width: 230px;
+  border-radius: 100%;
+  padding: 20px;
+  margin: 50px auto;
+  position: relative;
+  z-index: 2;
+  background-color: #blue;
+  transition: .5s ease-in-out;
+  box-sizing: content-box;
+  box-shadow: 0px 1px 40px #8d8d8d;
 }
 
 #sky {
-    height: auto;
-    width: 100%;
-    margin: auto;
-    position: relative;
-    z-index: 1;
-    transition: .5s ease-in-out;
-    border-sizing: content-box;
-    box-shadow: 0px 1px 40px #8d8d8d;
+  height: auto;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  transition: .5s ease-in-out;
+  border-sizing: content-box;
+  box-shadow: 0px 1px 40px #8d8d8d;
 }
 
 #moonspot1 {
-    height: 40px;
-    width: 40px;
-    border-radius: 100%;
-    float:right;
-    margin: 20px;
-    transition: .5s ease-in-out;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  float:right;
+  margin: 20px;
+  transition: .5s ease-in-out;
 }
 
 #moonspot2 {
-    height: 80px;
-    width: 80px;
-    border-radius: 100%;
-    float:right;
-    margin: 20px;
-    transition: .5s ease-in-out;
+  height: 80px;
+  width: 80px;
+  border-radius: 100%;
+  float:right;
+  margin: 20px;
+  transition: .5s ease-in-out;
 }
 
 #moonspot3 {
-    height: 100px;
-    width: 100px;
-    border-radius: 100%;
-    float:right;
-    margin: 20px;
-    transition: .5s ease-in-out;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  float:right;
+  margin: 20px;
+  transition: .5s ease-in-out;
 }
 
 .visible {
-    background-color: #eaeff2;
+  background-color: #eaeff2;
 }
 
 /*gradient*/
-
-.gradient {
-  
+.gradient { 
 }
 
 /*jumbotron and header animation*/
@@ -710,10 +573,6 @@ position: relative;
   to {left: 0px; opactiy: 1;}
 }
 
-* {
-    box-sizing: border-box;
-}
-
 /*about page*/
 
 .about-title {
@@ -740,70 +599,67 @@ position: relative;
 }
 
 #biog {
-	width: 100%;
-	padding: 50px 0;
+  width: 100%;
+  padding: 50px 0;
 }
 
 #biog-text {
- max-width: 900px;
- text-align: justify;
- margin: auto;
- font-family: 'Roboto', sans-serif;
- font-weight: 300;
- font-size: 1.5em;
- width: 90%;
- padding: 0 0 50px 0;
+  max-width: 900px;
+  text-align: justify;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  width: 90%;
+  padding: 0 0 50px 0;
 }
 
 #contact-text {
- max-width: 900px;
- text-align: justify;
- margin: auto;
- font-family: 'Roboto', sans-serif;
- font-weight: 300;
- font-size: 1.7em;
- width: 90%;
- padding: 200px 0% 200px 0%;
- 
+  max-width: 900px;
+  text-align: justify;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1.7em;
+  width: 90%;
+  padding: 200px 0% 200px 0%;
 }
 
 #contact {
-width: 100%;
+ width: 100%;
  background-color: rgba(215, 215, 215, 1);
  box-shadow: 0px -1px 20px #8d8d8d; 
 }
 
 .biog-skills h1, .blog-skills p {
-    width: 90%;
-	margin: auto;	
+  width: 90%;
+  margin: auto;	
 }
 
 .biog-skills {
-	padding: 0 0px;
-	text-align: center;
-	margin: auto;
-	display: block;	
-	margin-bottom: 20px;
+  padding: 0 0px; 
+  text-align: center;
+  margin: auto;
+  display: block;	
+  margin-bottom: 20px;
 }
 
 .biog-skills img {
-	border-radius: 100%;
-	opacity: .8;
+  border-radius: 100%;
+  opacity: .8;
 }
 
 .biog-skills p {
-	font-size: 18px;
+  font-size: 18px;
 }
 
 #skills-wrap {
-	margin: auto;
-	width: 90%;
-	padding: 20px 0;
-	max-width: 900px;
-	display: block;	
+  margin: auto;
+  width: 90%;
+  padding: 20px 0;
+  max-width: 900px;
+  display: block;	
 }
-
-
 
 #about-banner-one {
   background-color: #695F5F;
@@ -819,8 +675,8 @@ width: 100%;
 }
 
 #about-banner-three {
- background-color: #c2c2c2; 
- z-index: 500;
+  background-color: #c2c2c2; 
+  z-index: 500;
 }
 
 #about-banner-one, #about-banner-two, #about-banner-three {
@@ -860,10 +716,10 @@ width: 100%;
 }
 
 .skill-list {
- margin: auto;
- max-width: 500px;
- padding: 10px;
- text-align: center;
+  margin: auto;
+  max-width: 500px;
+  padding: 10px;
+  text-align: center;
 }
 
 .skill-list p {
@@ -880,205 +736,203 @@ width: 100%;
 }
 
 .skill-icon {
-	opacity: 1;
-	box-shadow: inset 0px 0px 1000px rgba(0,0,0,.8);
-	margin: auto;
-	display: block;
+  opacity: 1;
+  box-shadow: inset 0px 0px 1000px rgba(0,0,0,.8);
+  margin: auto;
+  display: block;
 }
 
 .biog-skills p {
-	padding: 0 10px;
+  padding: 0 10px;
 }
 
+/*social icons and contact*/
+
+.social:hover {
+  fill: #000000 !important;
+  cursor: pointer;
+}
+
+#contact a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+#contact a:hover {
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+  text-decoration: none;
+  color: rgb(47,144,235);
+}
 
 @media only screen and (max-width: 599px) {
 
   #about-title {
-   	text-align: center;
+    text-align: center;
 	font-size: 30px;
 	margin-top: 0px; 
 	margin: auto;
 	padding: 0px 5px;
 	
-}
+  }
   #about-title-wrap {
   	max-width: 80%;
   	padding: 0px 5px;
   	top: 0;
   	margin: auto;   		
-}
-#about-container-one {
+  }
+  #about-container-one {
 	margin-top: -120px;
 	padding-top: 0px;
-}
-#about-jumbotron {
- padding-top: 0px;
- }
+  }
+  #about-jumbotron {
+    padding-top: 0px;
+  }
  
- #about-row-one {
- padding-top: 0px;
- margin-top: -25px;
- }
+  #about-row-one {
+    padding-top: 0px;
+    margin-top: -25px;
+  }
 }
 
 @media (min-width:600px) and (max-width:967px){
-    #about-title {
-   	text-align: left;
+  #about-title {
+    text-align: left;
 	font-size: 30px;
 	margin-top: 0px; 
-	
 	padding: 0px 5px;
-}
+  }
   #about-title-wrap {
   	max-width: 50%;
   	padding: 0px 15px;
   	top: 0; 	   		
+  }
 }
-}
-
-/* The actual timeline (the vertical ruler) */
+/*cv timeline
+/*The actual timeline (the vertical ruler)  
 .timeline {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-    z-index: 0;
-    
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 0;   
 }
-
-/* The actual timeline (the vertical ruler) */
+/* The actual timeline (the vertical ruler) 
 .timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: white;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-    z-index: -10;
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -10;
 }
-
-/* Container around content */
+/* Container around content 
 .cv-container {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-    z-index: 0;
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  z-index: 0;
 }
-
-/* The circles on the timeline */
+/* The circles on the timeline 
 .cv-container::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -12px;
-    background-color: white;
-    border: 4px solid DarkSlateGrey;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 0;
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -12px;
+  background-color: white;
+  border: 4px solid DarkSlateGrey;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 0;
 }
-
-/* Place the container to the left */
+/* Place the container to the left 
 .cv-left {
-    left: 0;
+  left: 0;
 }
-
-/* Place the container to the right */
+/* Place the container to the right 
 .cv-right {
-    left: 50%;
+  left: 50%;
 }
-
-/* Add arrows to the left container (pointing right) */
+/* Add arrows to the left container (pointing right) 
 .cv-left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
 }
-
-/* Add arrows to the right container (pointing left) */
+/* Add arrows to the right container (pointing left) 
 .cv-right::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    left: 30px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
 }
-
-/* Fix the circle for containers on the right side */
+/* Fix the circle for containers on the right side 
 .cv-right::after {
-    left: -12.3px;
+  left: -12.3px;
 }
-
-/* The actual content */
+/* The actual content 
 .cv-content {
-    z-index: 0;
-    padding: 20px 30px;
-    background-color: white;
-    position: relative;
-    border-radius: 6px;
+  z-index: 0;
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
 }
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
+/* Media queries - Responsive timeline on screens less than 600px wide 
 @media all and (max-width: 600px) {
-  /* Place the timelime to the left */
+  /* Place the timelime to the left 
   .timeline::after {
     left: 31px;
   }
-  
-  /* Full-width containers */
+  /* Full-width containers 
   .cv-container {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
   }
-  
-  /* Make sure that all arrows are pointing leftwards */
+  /* Make sure that all arrows are pointing leftwards 
   .cv-container::before {
     left: 60px;
     border: medium solid white;
     border-width: 10px 10px 10px 0;
     border-color: transparent white transparent transparent;
   }
-
-  /* Make sure all circles are at the same spot */
+  /* Make sure all circles are at the same spot 
   .cv-left::after, .cv-right::after {
     left: 18.5px;
   }
-  
-  /* Make all right containers behave like the left ones */
+  /* Make all right containers behave like the left ones 
   .cv-right {
     left: 0%;
   }
 }
 
 #timeline-div {
-   max-width: 100%;
-   max-height: 500px;
-   overflow: scroll;
-   margin: auto;
-   margin-top: 0px;
-   margin-bottom: 0px;
-   padding: 10px 10px;
-   box-shadow: inset 0px 0px 10px rgba(0,0,0, .5);
-   display: none;
-   position: relative;
-}
-
-
-
-
+  max-width: 100%;
+  max-height: 500px;
+  overflow: scroll;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 10px 10px;
+  box-shadow: inset 0px 0px 10px rgba(0,0,0, .5);
+  display: none;
+  position: relative;
+}*/
