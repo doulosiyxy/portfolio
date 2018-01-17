@@ -9,9 +9,9 @@
   <link rel='stylesheet' type='text/css' href='main.css' />
   <link rel="icon" type="image/png" href="https://www.dl.dropboxusercontent.com/s/19d2jggek8qh95k/favicon.png?dl=0"/>
 </head>
-
 <body id="background">
-<audio id="cAudio">
+ <!-- audio files for instrument widget -->
+  	<audio id="cAudio">
       <source src="https://www.dl.dropboxusercontent.com/s/fycyccawze85ace/c_note.mp3?dl=0" type="audio/mpeg"></source>
       <source src="https://www.dl.dropboxusercontent.com/s/kws6qlqfd5staq2/c_note.ogg?dl=0" type="audio/ogg"></source>
       <source src="https://www.dl.dropboxusercontent.com/s/er54mihr3mo8hjd/c_note.wav?dl=0" type="audio/wav"></source>
@@ -46,6 +46,7 @@
       <source src="https://www.dl.dropboxusercontent.com/s/cvsg338fo3apunu/b_note.wav?dl=0" type="audio/ogg"></source>
       <source src="https://www.dl.dropboxusercontent.com/s/cvsg338fo3apunu/b_note.wav?dl=0" type="audio/wav"></source>
     </audio>
+<!-- Scroll to top button -->
 <button onclick="topFunction()" id="myBtn" title="Go to top">&#8963;</button> 
   <!-- Navigation -->
   <header class="container">
@@ -59,7 +60,7 @@
       </nav>
     </div>
   </header>
-  
+   <!-- Navigation Bar -->
   <header id="hidden-nav" class="container">
     <div class="row"><h1 class=""></h1>
       <nav id="nav">
@@ -69,67 +70,55 @@
       </nav>
     </div>
   </header>
-  
+   <!-- widgets -->
   <section>
     <div class="container clock fade-scroll">
-     	<div class="row text-center">
-      		<div id="instrument">
-      			<div id="c" class="box"><div class="text"><h1>C</h1></div></div>
-      			<div id="d" class="box"><div class="text"><h1>D</h1></div></div>
-      			<div id="e" class="box"><div class="text"><h1>E</h1></div></div>
-      			<div id="f" class="box"><div class="text"><h1>F</h1></div></div>
-     			<div id="g" class="box"><div class="text"><h1>G</h1></div></div>
-      			<div id="a" class="box"><div class="text"><h1>A</h1></div></div>
-      			<div id="b" class="box"><div class="text"><h1>B</h1></div></div>
-    		</div>
-      	</div>
-    </div>
- </section>
- 
- 
- 	<div class="container fun-banner">
-		<div class="fade-scroll text-center">
-			<span class="fun-title fade-scroll">Instrument</span>	
-  		</div>
-	</div>
-  
-  
-  
-     <div  id="clock-container" class="gradient fade-scroll">
-        
-        <div id="clock-wrap">
-            <div id="day"></div>
-            <div id="date"></div>
-            <div id="clock"></div>
-		</div>
-    </div>
-
-    
- 	<div class="container fun-banner">
-		<div class="text-center">
-			<span class="fun-title">Digital Clock</span>	
-  		</div>
-	</div>
-	
- <section>
-    <div id="sky" class="container day fade-scroll">
-     	<div class="row text-center">
-      		<div id="orb" class="sun">
-      			<div id="moonspot1"></div>
-      			<div id="moonspot2"></div>
-      			<div id="moonspot3"></div>
-      		</div>
+      <div class="row text-center">
+        <div id="instrument">
+      	  <div id="c" class="box"><div class="text"><h1>C</h1></div></div>
+      	  <div id="d" class="box"><div class="text"><h1>D</h1></div></div>
+      	  <div id="e" class="box"><div class="text"><h1>E</h1></div></div>
+      	  <div id="f" class="box"><div class="text"><h1>F</h1></div></div>
+     	  <div id="g" class="box"><div class="text"><h1>G</h1></div></div>
+      	  <div id="a" class="box"><div class="text"><h1>A</h1></div></div>
+      	  <div id="b" class="box"><div class="text"><h1>B</h1></div></div>
         </div>
+      </div>
     </div>
- </section>
- 
- <div class="container fun-banner fade-scroll">
-		<div class="text-center">
-			<span class="fun-title">Toggle Effects</span>	
-  		</div>
+  </section> 
+    <div class="container fun-banner">
+	  <div class="fade-scroll text-center">
+	    <span class="fun-title fade-scroll">Instrument</span>	
+  	  </div>
 	</div>
-
-  
+    <div  id="clock-container" class="gradient fade-scroll">
+      <div id="clock-wrap">
+        <div id="day"></div>
+        <div id="date"></div>
+        <div id="clock"></div>
+	  </div>
+    </div> 
+ 	<div class="container fun-banner">
+	  <div class="text-center">
+	    <span class="fun-title">Digital Clock</span>	
+  	  </div>
+    </div>
+  <section>
+    <div id="sky" class="container day fade-scroll">
+       <div class="row text-center">
+      	<div id="orb" class="sun">
+      	  <div id="moonspot1"></div>
+      	  <div id="moonspot2"></div>
+      	  <div id="moonspot3"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="container fun-banner fade-scroll">
+    <div class="text-center">
+	  <span class="fun-title">Toggle Effects</span>	
+    </div>
+  </div>
   <footer class="container">
     <div class="row">
       <p class="col-sm-4">&copy; 2017 James Crooke</p>
@@ -140,22 +129,22 @@
       </ul>
     </div>
   </footer>
-  
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
   <script src='main.js'></script> 
+  <!-- js for scroll to top button -->
    <script>window.onscroll = function() {scrollFunction()};
-	function scrollFunction() {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+     function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
         document.getElementById("myBtn").style.display = "block";
-    } else if (document.body.scrollTop < 100 || document.documentElement.scrollTop < 100) {
+        } else if (document.body.scrollTop < 100 || document.documentElement.scrollTop < 100) {
         document.getElementById("myBtn").style.display = "none";
-    }
-	}
+        }
+	 }
 // When the user clicks on the button, scroll to the top of the document
-	function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;   
-}</script>
+	 function topFunction() {
+       document.body.scrollTop = 0;
+       document.documentElement.scrollTop = 0;   
+     }
+  </script>
 </body>
-
 </html>
