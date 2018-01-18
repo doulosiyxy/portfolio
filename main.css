@@ -178,6 +178,7 @@ background: url('about.jpg') no-repeat right bottom;
 figure img {
   box-shadow: 0px 1px 40px #8d8d8d;
   border: 1px solid black;
+  filter: grayscale(100%);
 }
 
 .details {
