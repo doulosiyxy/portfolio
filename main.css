@@ -136,7 +136,7 @@ header p {
 }
 
 #about-jumbotron {
-  background: url('https://www.dl.dropboxusercontent.com/s/ln0anxiertriezc/about-img.jpg?dl=0') no-repeat 80% bottom;
+  background: url('images/about-img.jpg') no-repeat 80% bottom;
   background-size: contain;
   z-index: 10;
   margin-bottom: 150px;
