@@ -135,6 +135,7 @@ header p {
   text-shadow: 0.25px 0.25px 0.25px #000000;
   box-shadow: 0px 1px 40px #8d8d8d;
 }
+
 .jumbotron h2, .jumbotron h3 {
   filter: drop-shadow(1px 1px 0.5px rgba(0,0,0,0.5));
 }
@@ -157,7 +158,6 @@ header p {
   -webkit-text-shadow: 0.25px 0.25px 0.25px #000000;
   text-shadow: 0.25px 0.25px 0.25px #000000;
   box-shadow: 0px 1px 40px #8d8d8d;
-  filter: drop-shadow(1px 1px 0.5px rgba(0,0,0,0.5));
 }
 
 #jumbotron {
@@ -676,6 +676,10 @@ digitalclock*/
 .biog-skills p {
   font-size: 18px;
 }
+.biog-skills p:first-of-type {
+  color: #337ab7;
+}
+
 
 #skills-wrap {
   margin: auto;
