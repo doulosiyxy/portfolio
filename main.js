@@ -220,7 +220,7 @@ $(document).ready(function() {
     $('#skills-wrap-two').slideToggle();
   });
 	// hyperlink
-  $('#logo').on('click', () => {
+  $('.logo').on('click', () => {
     window.location.href='index.html';
   });
 });

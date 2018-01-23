@@ -46,6 +46,21 @@ header {
   position: relative;
 }
 
+.logo {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
+header img {
+  opacity: .8 !important;
+}
+
+header div div {
+  animation-name: header;
+  animation-duration: 2s;
+}
+
 header .row,
 footer .row {
   display: flex;
@@ -64,13 +79,14 @@ header nav {
   display: flex;
   justify-content: flex-end;
   animation-name: menu-container;
-    animation-duration: 2s;
+  animation-duration: 2s;
 }
 
 header p {
   padding: 0 20px;
   margin: 0; 
 }
+
 
 /*menu bars*/
 .bar1, .bar2, .bar3 {
