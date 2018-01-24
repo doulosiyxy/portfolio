@@ -54,6 +54,7 @@ header {
 
 header img {
   opacity: .8 !important;
+  border-radius: 2px !important;
 }
 
 header div div {
