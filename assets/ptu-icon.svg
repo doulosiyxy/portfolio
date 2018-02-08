@@ -1,0 +1,17 @@
+<svg width="225" height="225" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="107.633803" width="107.633803" y="-1" x="-1"/>
+  <g display="none" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%" id="svg_1"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <line fill="none" stroke="#ffffff" stroke-width="9" x1="111.795775" y1="125.880282" x2="111.795775" y2="61.09155" id="svg_9" stroke-linejoin="null" stroke-linecap="null"/>
+  <ellipse fill="#000000" stroke="#000000" stroke-width="5" stroke-opacity="0" cx="112.500002" cy="112.500002" id="svg_7" rx="107.042254" ry="107.042254"/>
+  <text fill="#ffffff" stroke-width="0" x="35.538814" y="182.846964" id="svg_4" font-size="110" font-family="Helvetica, Arial, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(0.8020756688338793,0,0,0.8020756688338793,-3.217896696219782,-1.646303750626707) " stroke="#000000" font-weight="normal">PTU</text>
+ </g>
+</svg>
