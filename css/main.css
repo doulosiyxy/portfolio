@@ -543,6 +543,11 @@ footer div {
   max-width: 230px;
   display: block;
   overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
 }
 
 #contact a {
