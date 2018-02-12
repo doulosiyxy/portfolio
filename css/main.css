@@ -546,8 +546,9 @@ footer div {
   overflow-x: hidden;
 }
 
-::-webkit-scrollbar {
+.skl-wrapper::-webkit-scrollbar {
     width: 1px;
+    background: black;
 }
 
 #contact a {
