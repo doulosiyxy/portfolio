@@ -31,7 +31,7 @@ $('.one').on('click', function() {
   window.open('http://projecttimothyuganda.github.io/ptu', '_blank');
 });
 $('.two').on('click', function() {
-  window.open('https://doulosiyxy.github.io/theexegesist/', '_blank');
+  window.open('https://doulosiyxy.github.io/theexegesist', '_blank');
 });
 $('.three').on('click', function() {
   window.open('http://ornis.co.uk', '_blank');
