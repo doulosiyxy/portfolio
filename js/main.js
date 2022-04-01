@@ -11,11 +11,15 @@ $('.four').delay(6100).fadeTo(1500, 0.7);
 $('#logo-icon').animate({height: 220}, 200);
 $('#contact-text').css('padding-bottom','2000px');
 
-/*$('.project-figure').on('mouseover', function() {
-  $(this).css("opacity", 1).on('mouseleave', function() {
-    $(this).css("opacity", 0.7);
+
+/*
+  $('.project-figure').on('mouseover', function() {
+    $(this).css("opacity", 1).on('mouseleave', function() {
+      $(this).css("opacity", 0.7);
+    });
   });
-});*/
+*/
+
 
 //hyperlinks
 $('.linkedin').on('click', function() {

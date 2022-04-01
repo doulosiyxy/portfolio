@@ -737,10 +737,16 @@ footer div {
 #logo-icon {
    display: none;
   }
+  
 }
 
 @media only screen and (max-height: 452px) {
   .projects p {
     font-size: 11px;
+  }
+}
+@media only screen and (max-height: 359px) {
+  .projects h2 {
+    font-size: 20px;
   }
 }
