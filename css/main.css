@@ -10,6 +10,8 @@ body, html {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+  width: 100vh !important;
+  height: 100vh !important;
 }
 
 header {
