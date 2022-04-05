@@ -10,8 +10,13 @@ $('.three').delay(5900).fadeTo(1500, 0.7);
 $('.four').delay(6100).fadeTo(1500, 0.7);
 $('#logo-icon').animate({height: 220}, 200);
 $('#contact-text').css('padding-bottom','2000px');
-$('.overlay-sunrise').delay(300).fadeTo(400, 0);
-$('.overlay-sunrise').delay(800).css('display', 'none');
+$('.overlay-sunrise').delay(250).fadeTo(350, 0);
+
+
+$('.overlay-sunrise').on('click', function() {
+  $(this).css('display', 'none');
+});
+
 
 
 
@@ -369,8 +374,6 @@ function sunRiseFast() {
 
 sunRiseFast();
 
-
 function replayTwo() {
-
   tlTwo.restart();
 }
