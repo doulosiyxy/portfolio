@@ -41,7 +41,7 @@ $('.two').on('click', function() {
   window.open('https://doulosiyxy.github.io/theexegesist', '_blank');
 });
 $('.three').on('click', function() {
-  window.location.href="aana.html"
+  window.location.href='aana.html';
 });
 $('.four').on('click', function() {
   window.open('http://www.wycliffechurch.org.uk', '_blank');
