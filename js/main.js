@@ -90,7 +90,7 @@ function titleFade() {
   }, 1)
 }
 
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+/*if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 
   $('#contact-text').css('padding-bottom','2000px');
 
@@ -103,7 +103,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     $('#about-title-wrap').delay(840).animate({"top": "0"}, 2300);
   });
 
-}
+}*/
 
 // Digital Clock
 $(document).ready(function() {
