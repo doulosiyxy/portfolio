@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Apps and Animations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cool apps and animations by me.">
+    <meta property="og:title" content="Apps and Animations." />
+    <meta property="og:description" content="Cool apps and animations by me." />
+    <meta property="og:image" content="https://doulosiyxy.github.io/portfolio/images/thumbnail.jpg" />
+    <meta property="og:url" content="https://doulosiyxy.github.io/aanda.html" />
+    <meta name="twitter:title" content="Apps and Animations" />
+    <meta name="twitter:description" content="Cool apps and animations by me." />
+    <meta name="twitter:image" content="https://doulosiyxy.github.io/portfolio/images/thumbnail.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700|Lato:100,200,300,400,700,800,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' type='text/css' href='css/main.css'/>
+    <link rel="icon" type="image/png" href="https://www.dl.dropboxusercontent.com/s/19d2jggek8qh95k/favicon.png?dl=0"/>
+
+  </head>
+  <body id="background" class="gradient apps">
+
+    <header id="about-nav" class="app-header">
+      <div class="">
+        <nav class="col-sm-12">
+          <div id="a-nav">
+            <span><a href="index.html"><i class="glyphicon glyphicon-home"></i></a></span>
+            <span><a href="about.html"><i class="glyphicon glyphicon-user"></i></a></span>
+            <span class="projects-link" ><a><i class="glyphicon glyphicon-th-large"></i></a></span>
+            <span><a id="contact-link" href="contact.html"><i class="glyphicon glyphicon-envelope"></i></a></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+
+<!--sunrise-->
+    <div class="apps">
+      <div  class="col-sm-12 sun-rise sun-rise-container">
+        <div id="container">
+          <div class="night sun-rise"></div>
+          <div class="sky sun-rise">
+            <img class="plane" src="https://dl.dropboxusercontent.com/s/k05or9tvg1hkuc9/airplane.png?dl=0" />
+          </div>
+          <div onclick="replayTwo()" class="sun sun-rise"><button class="sun-rise button-sun-rise" onclick="replayTwo()"><i class="sun-rise replay material-icons">replay</i></button></div>
+          <img class="tree" src="https://dl.dropboxusercontent.com/s/ytd0mqnmcxif6a6/tree.png?dl=0" />
+          <img class="birds" src="https://dl.dropboxusercontent.com/s/03vu0c3kg1oosrq/birds.png?dl=0">
+          <div class="ground"></div>
+          <div class="overlay-sunrise"></div>
+        </div>
+      </div>
+    </div>
+
+<div class="apps">
+
+  <!--orbital-->
+  <div class="col-sm-4 app orbital">
+    <div class="orbital-wrapper">
+      <!--<div id="orbital-inner-wrapper">-->
+      <div id="orbitOne" class="orbit">
+        <div id="circleone" class="circleone small"><i class="orbiticon info material-icons white">info</i></div>
+        <div id="circletwo" class="circletwo small"><i class="orbiticon home material-icons">home</i></div>
+      </div>
+        <div id="orbitTwo" class="orbit">
+          <div id="circlethree" class="circlethree circleone small"><i class="orbiticon white stars material-icons explore">explore</i></div>
+          <div id="circlefour" class="circlefour circletwo small"><i class="orbiticon account_circle material-icons">account_circle</i></div>
+        </div>
+        <div id="orbitThree" class="orbit">
+          <div id="circlefive" class="circlefive circleone small"><i class="orbiticon white email material-icons">email</i></div>
+          <div id="circlesix" class="circlesix circletwo small"><i class="orbiticon stars material-icons">stars</i></div>
+        </div>
+        <div class="centre"></div>
+        <button id="orbitalbutton" onclick="replay()"><i class="orbiticon replay material-icons white">replay</i></button>
+      <!--</div>-->
+    </div>
+  </div>
+
+  <div id="all" class="col-sm-4 even app">
+    <div id="clockwrapper">
+      <div id="day"></div>
+      <div id="date"></div>
+      <div id="clock"></div>
+    </div>
+  </div>
+
+
+  <div  class="col-sm-4 app">
+    <div id="orb" class= "sun-orb">
+      <div id= "moonspot1"></div>
+      <div id= "moonspot2"></div>
+      <div id= "moonspot3"></div>
+    </div>
+    <div id="sky" class="day-sunmoon"></div>
+  </div>
+
+</div>
+
+    <footer id="contact-footer" class="app-footer">
+      <div>
+        <img class="twitter" width="20px" height="20px" src="assets/twitter.svg">
+        <img class="linkedin" width="20px" height="20px" src="assets/linkedin.svg">
+        <img class="github" width="20px" height="20px" src="assets/github.svg">
+      </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src='js/main.js'></script>
+  </body>
+</html>
