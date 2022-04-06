@@ -1310,6 +1310,14 @@ button.sun-rise:hover {
   }
 }
 
+@media screen and (max-width: 450px) and (max-height: 896px) {
+  .col-sm-4 {
+    width: 100%;
+  }
+}
+
+
+
 @media screen and (max-width: 767px) and (max-height: 450px) {
   .col-sm-4 {
     width: 100%;
