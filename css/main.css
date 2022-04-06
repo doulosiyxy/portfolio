@@ -91,10 +91,10 @@ header h3 {
 }
 
 #home-nav * {
-
+  
 }
 
-@media only screen and (max-width: 896px) {
+@media only screen and (max-width: 1047px) {
   #home-nav nav {
     float: right;
     width: 50%;
