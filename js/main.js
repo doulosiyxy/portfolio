@@ -340,15 +340,16 @@ $('.small').on('mousedown', function () {
 var tlTwo = new TimelineLite();
 function sunRiseFast() {
   tlTwo
-    .from(".sun", 2, { y: 300, scale: 0.5, ease: Elastic.easeOut })
+    .from(".sun", 1.5, { y: 300, scale: 0.5, ease: Elastic.easeOut })
     .from(".night", 1, { opacity: 1, delay: 0.2 }, 0)
     .from(".tree", 0.2, { rotationX: -90, y: 45, ease: Back.easeOut }, 0.5)
-    .fromTo(
+
+    .to(
       ".plane",
       4,
-      { right: -150, y: 50 },
-      { left: -150, y: 0, ease: SlowMo.ease.config(0.4, 0.7, false) }
+      {left: -150, y: 0, ease: SlowMo.ease.config(0.4, 0.7, false) }
     )
+
     .fromTo(
       ".birds",
       35,
