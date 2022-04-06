@@ -703,6 +703,7 @@ footer div {
 
 .apps {
  width 100%;
+ height: auto;
  overflow: scroll;
 }
 
@@ -1304,6 +1305,12 @@ button.sun-rise:hover {
 }
 }
 
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
+  .col-sm-4 {
+    width: 50%;
+  }
+}
+
 @media screen and (max-width: 896px) and (max-height: 450px) {
   .col-sm-4 {
     width: 50%;
@@ -1315,8 +1322,6 @@ button.sun-rise:hover {
     width: 100%;
   }
 }
-
-
 
 @media screen and (max-width: 767px) and (max-height: 450px) {
   .col-sm-4 {
