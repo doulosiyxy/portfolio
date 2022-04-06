@@ -318,6 +318,19 @@ float: right;
   100% {opacity: 0;}
 }
 
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-moz-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@-o-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
 footer {
   width: 100%;
   position: absolute;
@@ -400,7 +413,7 @@ footer div {
 }
 
 .project-figure {
-  display: none;
+  display: block;
   opacity: 0;
   margin: 0 1%;
   padding: 0 1px;
@@ -419,9 +432,27 @@ footer div {
   background: black;
   position: relative;
   transform: scale(1.02);
-  opacity: 1;
   box-shadow: 0px 0px 20px #8d8d8d;
-  opacity: 1;
+}
+
+.project-figure.one {
+  animation: fadeIn 1.5s ease-in-out 4.5s;
+  animation-fill-mode: forwards;
+}
+
+.project-figure.two {
+  animation: fadeIn 1.5s ease-in-out 4.7s;
+  animation-fill-mode: forwards;
+}
+
+.project-figure.three {
+  animation: fadeIn 1.5s ease-in-out 4.9s;
+  animation-fill-mode: forwards;
+}
+
+.project-figure.four {
+  animation: fadeIn 1.5s ease-in-out 5.1s;
+  animation-fill-mode: forwards;
 }
 
 .projects h2 {
@@ -1045,81 +1076,7 @@ button.sun-rise:hover {
   background-color: none;
 }
 
-@media only screen and (max-height: 419px) {
 
-  #container {
-    height: 100vh;
-  }
-
-  .ground {
-    position: absolute;
-    bottom: 0;
-    z-index: 101;
-    width: 100%;
-    height: 25px;
-    background-color: black;
-    box-shadow: 0 0 10px black;
-  }
-
-  .tree {
-    position: absolute;
-    top: initial;
-    bottom: 0% !important;
-    z-index: 102;
-  }
-
- .birds {
-   position: absolute;
-   top: initial;
-   bottom: 50%;
-   z-index: 104;
- }
-
-}
-
-
-@media only screen and (max-height: 430px) {
-
-
-}
-
-@media only screen and (max-width: 600px) {
-  .plane {
-    top: 110px;
-    right: -200px;
-  }
-}
-
-@media only screen and (max-width: 615px) {
-  .sun {
-    right: 0;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    margin: auto;
-    transform: translate(0px, -100px) !important;
-  }
-  .tree {
-    margin: auto;
-    left: 0;
-    right: 0;
-  }
-}
-
-
-@media only screen and (max-height: 370px) {
-
-  .plane {
-    top: 60px;
-    right: -200px;
-  }
-}
-
-
-
-
-
-/*need a query to adjust height on iphone se*/
 
 
 
@@ -1291,6 +1248,18 @@ button.sun-rise:hover {
     margin: 30px 30px;
   }
 }
+
+@media only screen and (max-width: 485px) {
+  .tree {
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+  .sun {
+    top: 10%;
+  }
+}
+
 @media only screen and (max-width: 415px) {
 #logo-icon {
    display: none;
@@ -1302,9 +1271,82 @@ button.sun-rise:hover {
   .projects p {
     font-size: 11px;
   }
+
 }
+
 @media only screen and (max-height: 359px) {
   .projects h2 {
     font-size: 20px;
   }
 }
+
+/*
+@media only screen and (max-height: 419px) {
+
+  #container {
+    height: 100vh;
+  }
+
+  .ground {
+    position: absolute;
+    bottom: 0;
+    z-index: 101;
+    width: 100%;
+    height: 25px;
+    background-color: black;
+    box-shadow: 0 0 10px black;
+  }
+
+  .tree {
+    position: absolute;
+    top: initial;
+    bottom: 0% !important;
+    z-index: 102;
+  }
+
+ .birds {
+   position: absolute;
+   top: initial;
+   bottom: 50%;
+   z-index: 104;
+ }
+
+}
+
+
+@media only screen and (max-height: 430px) {
+
+
+}
+
+@media only screen and (max-width: 600px) {
+  .plane {
+    top: 110px;
+    right: -200px;
+  }
+}
+
+@media only screen and (max-width: 615px) {
+  .sun {
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    transform: translate(0px, -100px) !important;
+  }
+  .tree {
+    margin: auto;
+    left: 0;
+    right: 0;
+  }
+}
+
+
+@media only screen and (max-height: 370px) {
+
+  .plane {
+    top: 60px;
+    right: -200px;
+  }
+}*/
