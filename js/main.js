@@ -2,14 +2,14 @@ var pathname = window.location.href;
 //presets
 $('.title-wrapper').delay(3000).fadeOut(1000);
 $('.jumbotron').delay(4000).fadeOut(1000);
-$('#home-nav').delay(5000).animate({"margin-top": "10px"}, 500);
-$('#home-footer').delay(5000).animate({"margin-bottom": "0px"}, 500);
+$('#home-nav').delay(0).animate({"margin-top": "10px"}, 500);
+$('#home-footer').delay(0).animate({"margin-bottom": "0px"}, 500);
 //$('.one').delay(5500).fadeTo(1500, 0.7);
 //$('.two').delay(5700).fadeTo(1500, 0.7);
 //$('.three').delay(5900).fadeTo(1500, 0.7);
 //$('.four').delay(6100).fadeTo(1500, 0.7);
 $('#logo-icon').animate({height: 220}, 200);
-$('#contact-text').css('padding-bottom','2000px');
+//$('#contact-text').css('padding-bottom','2000px');
 $('.overlay-sunrise').delay(250).fadeTo(350, 0);
 
 
