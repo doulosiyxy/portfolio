@@ -196,7 +196,6 @@ setInterval(updateGradient,15);
 //app info button and overlay display
 
 $('.app-icon').on('click', function(){
-  $('.text-block').hide();
   $(this).next().toggle();
 });
 
