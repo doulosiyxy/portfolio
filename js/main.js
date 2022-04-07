@@ -424,7 +424,9 @@ $('#walk-btn').on('click', function(){
 
 $('#run-btn').on('click', function(){
 
-  if($('#tuna').hasClass('tuna')) {
+  if($('#tuna').hasClass('tuna-run')) {
+
+  } else if ($('#tuna').hasClass('tuna')) {
     $('#tuna').removeClass().addClass('tuna-run');
   } else {
 
