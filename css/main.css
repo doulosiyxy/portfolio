@@ -1259,7 +1259,7 @@ button.sun-rise:hover {
   left: 0;
   margin: auto auto;
   height: 150px; width: 300px;
-  background: url('../assets/sprite_catsit_small.png') 0 -750px no-repeat;
+  background: url('../assets/sprite_catsit_small.png') 0 -751px no-repeat;
   animation: walk 0.3s steps(5) forwards;
 }
 
@@ -1274,7 +1274,7 @@ button.sun-rise:hover {
   height: 150px; width: 300px;
   background: url('../assets/sprite_catrun_small.png') 0 0 no-repeat;
   animation: run-cycle-one 1s steps(12) 1,
-  run-cycle-two 1.1s steps(13) 1s infinite;
+  run-cycle-two .6s steps(13) 1s infinite;
 }
 
   /*animation:
@@ -1295,7 +1295,7 @@ button.sun-rise:hover {
 
 @keyframes sit-down {
   0% { background-position: 0 0; }
-  100% {background-position: 0 -750px; }
+  100% {background-position: 0 -751px; }
 }
 
 @keyframes walk {
