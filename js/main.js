@@ -390,3 +390,43 @@ sunRiseFast();
 function replayTwo() {
   tlTwo.restart();
 }
+
+
+//cat sprite functions
+
+$('#sit-btn').on('click', function(){
+  $('#tuna').removeClass().addClass('tuna-sit');
+});
+
+$('#walk-btn').on('click', function(){
+
+  if($('#tuna').hasClass('tuna')) {
+
+  }  else if ($('#tuna').hasClass('tuna-run')) {
+    $('#tuna').removeClass().addClass('tuna-sit');
+    setTimeout(function(){
+      $('#tuna').removeClass().addClass('tuna-walk');
+      setTimeout(function() {
+        $('#tuna').removeClass().addClass('tuna');
+      }, 400);
+    }, 500);
+  } else {
+    $('#tuna').removeClass().addClass('tuna-walk');
+    setTimeout(function(){
+      $('#tuna').removeClass().addClass('tuna');
+    }, 400);
+  }
+});
+
+$('#run-btn').on('click', function(){
+
+  if($('#tuna').hasClass('tuna')) {
+    $('#tuna').removeClass().addClass('tuna-run');
+  } else {
+
+    $('#tuna').removeClass().addClass('tuna-walk');
+    setTimeout(function(){
+      $('#tuna').removeClass().addClass('tuna-run');
+    }, 400);
+  }
+});
