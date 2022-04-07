@@ -197,6 +197,7 @@ setInterval(updateGradient,15);
 
 $('.app-icon').on('click', function(){
   $(this).next().fadeToggle();
+  $('.app-icon').not(this).next().hide();
 });
 
 //digital clockapp
