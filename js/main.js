@@ -200,6 +200,10 @@ $('.app-icon').on('click', function(){
   $('.app-icon').not(this).next().hide();
 });
 
+$('.text-block').on('click', function() {
+  $('.text-block').fadeOut();
+});
+
 //digital clockapp
 
 $(document).ready( function() {

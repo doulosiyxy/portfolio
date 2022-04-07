@@ -735,6 +735,7 @@ footer div {
   opacity: 1;
   background-color: rgba(0,0,0,0.90);
   z-index: 2001;
+  cursor: pointer;
 }
 
 .app-text {
@@ -790,7 +791,7 @@ footer div {
 #clock {
   width: 100%;
     margin: auto;
-    top: 75%;
+    top: 65%;
     left: 50%;
     position: absolute;
     font-family: courier, monospace;
@@ -807,7 +808,7 @@ footer div {
   width: 100%;
     margin: auto;
     position: absolute;
-    top: 25%;
+    top: 35%;
     left: 50%;
     font-family: courier, monospace;
     text-align: center;
@@ -1632,3 +1633,13 @@ button.sun-rise:hover {
     top: 20%;
   }
 }
+
+/*@media only screen and (max-height: 896px) and (orientation: landscape) {
+  .col-sm-12.sunrise {
+    height:
+
+  }
+  .col-sm-4, .col-sm-4.cat {
+    height: 320px;
+  }
+}*/
