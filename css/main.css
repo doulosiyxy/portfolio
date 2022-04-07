@@ -1169,7 +1169,7 @@ footer div {
 .plane {
   position: absolute;
   top: 40%;
-  right: -600px;
+  right: -800px !important;
   width: 90px;
   z-index: 103;
 }
@@ -1570,11 +1570,26 @@ button.sun-rise:hover {
   }
 }
 
-@media only screen and (max-width: 415px) {
-#logo-icon {
-   display: none;
-  }
 
+@media only screen and (max-width: 414px) {
+
+  .plane {
+    right: -410px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+  .plane {
+    right: -380px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+
+  .plane {
+    right: -350px;
+  }
 }
 
 @media only screen and (max-height: 452px) {
@@ -1631,6 +1646,7 @@ button.sun-rise:hover {
 @media only screen and (max-height: 350px) {
   .plane {
     top: 20%;
+
   }
 }
 
