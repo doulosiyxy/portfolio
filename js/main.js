@@ -14,8 +14,11 @@ $('.overlay-sunrise').delay(250).fadeTo(350, 0);
 
 
 $('.overlay-sunrise').on('click', function() {
-  $(this).css('display', 'none');
+  $(this).hide();
 });
+
+
+
 
 
 
@@ -188,6 +191,14 @@ setInterval(updateGradient,15);
   });
 });
 
+//Apps
+
+//app info button and overlay display
+
+$('.app-icon').on('click', function(){
+  $(this).next().toggle();
+});
+
 //digital clockapp
 
 $(document).ready( function() {
@@ -303,7 +314,7 @@ function start() {
 
     .to("#orbitThree", .6, { rotation: 300, ease: Power0.easeNone }, "rotate")
 
-  .to(".home, .info" , .6, { rotation: -180, ease: Power0.easeNone }, "rotate")
+  .to(".home, .orbiticon.info" , .6, { rotation: -180, ease: Power0.easeNone }, "rotate")
   .to(".email, .stars", .6, { rotation: 60, ease: Power0.easeNone }, "rotate")
   .to("explore, .account_circle", .6, { rotation: 120, ease: Power0.easeNone }, "rotate");
 

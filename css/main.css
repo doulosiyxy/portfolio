@@ -91,7 +91,7 @@ header h3 {
 }
 
 #home-nav * {
-  
+
 }
 
 @media only screen and (max-width: 1047px) {
@@ -708,6 +708,55 @@ footer div {
  background-color: black;
 }
 
+.app-icon {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px 10px;;
+  z-index: 2002;
+}
+
+.app-icon:hover {
+  cursor: pointer;
+}
+
+.text-block {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  background-color: rgba(0,0,0,0.90);
+  z-index: 2001;
+}
+
+.app-text {
+  color: white;
+  font-size: 20px;
+  font-family: lato, roboto, sans-serif;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+  z-index: 2001;
+}
+
+.sun-rise .app-icon {
+  margin: 10px 10px;
+  top: initial;
+  right: 0;
+  bottom: 0;
+}
+
 /*clock*/
 
 .even {
@@ -819,8 +868,8 @@ footer div {
 }
 
 #orb {
-    width: 80%;
-    height: 85%;
+    width: 230px;
+    height: 230px;
     border-radius: 100%;
     margin: auto;
     position: absolute;
@@ -1162,7 +1211,52 @@ button.sun-rise:hover {
   background-color: none;
 }
 
-/*media queries*/
+/*sprite animation*/
+
+.app.cat {
+  background-color: #FFFAED;
+  z-index: 1;
+  padding: 0 0;
+}
+
+.tuna {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto auto;
+  background: url('../assets/sprite_catwalk_small.png') 0 0 no-repeat;
+  background-size: cover;
+  height: 150px; width: 300px;
+  animation:
+    walk-cycle 1s steps(12) infinite;
+    /*sit-down steps(5) .5s 4s forwards;*/
+}
+
+  /*animation:
+    walk-cycle 1s steps(12) 4,
+    sit-down steps(5) .5s 4s forwards;
+  /* run sit-down after the walkcycle finishes
+     using an animation delay.
+     Use "steps(5)"; It should take about .5s. */
+
+  /* Don't forget to set the fill-mode to forwards! */
+
+@keyframes walk-cycle {
+  0% { background-position: 0 0; }
+  100% {background-position: 0 -1791px; }
+}
+
+/*@keyframes sit-down {
+  0% { background-position: -400px 0; }
+  100% {background-position: -400px -1000px; }
+}*/
+
+
+
+/*additional media queries*/
 
 @media screen and (max-width: 1366px) {
 #about-footer div {
@@ -1325,6 +1419,12 @@ button.sun-rise:hover {
 }
 
 @media screen and (max-width: 767px) and (max-height: 450px) {
+  .col-sm-4 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .col-sm-4 {
     width: 100%;
   }
