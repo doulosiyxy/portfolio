@@ -196,7 +196,7 @@ setInterval(updateGradient,15);
 //app info button and overlay display
 
 $('.app-icon').on('click', function(){
-  $(this).next().toggle();
+  $(this).next().fadeToggle();
 });
 
 //digital clockapp
