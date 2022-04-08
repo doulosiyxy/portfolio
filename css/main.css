@@ -1290,7 +1290,7 @@ button.sun-rise:hover {
   0% {
     background-position: 0 0;
   }
-  100% {background-position: 0 -1795px; }
+  100% {background-position: 0 -1800px; }
 }
 
 @keyframes sit-down {
