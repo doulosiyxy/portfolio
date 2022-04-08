@@ -713,7 +713,7 @@ footer div {
 .app-icon {
   display: block;
   position: absolute;
-  bottom: 0;
+  top: 0;
   right: 0;
   margin: 10px 10px;;
   z-index: 2002;
@@ -1102,6 +1102,7 @@ footer div {
   overflow: hidden;
 }
 .overlay-sunrise {
+  display: block;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1114,6 +1115,7 @@ footer div {
   background-color: black;
   z-index: 300;
 }
+
 .night {
   position: absolute;
   z-index: 99;

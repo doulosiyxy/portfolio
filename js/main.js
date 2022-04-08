@@ -10,18 +10,15 @@ $('#home-footer').delay(0).animate({"margin-bottom": "0px"}, 500);
 //$('.four').delay(6100).fadeTo(1500, 0.7);
 $('#logo-icon').animate({height: 220}, 200);
 //$('#contact-text').css('padding-bottom','2000px');
-$('.overlay-sunrise').delay(250).fadeTo(350, 0);
+$('.overlay-sunrise').delay(250).fadeTo(400, 0);
+setTimeout(function () {
+  $('.overlay-sunrise').hide();
+}, 2500);
 
 
-$('.overlay-sunrise').on('click', function() {
+/*$('.overlay-sunrise').on('click', function() {
   $(this).hide();
-});
-
-
-
-
-
-
+});*/
 
 /*
   $('.project-figure').on('mouseover', function() {
@@ -396,24 +393,22 @@ function replayTwo() {
 }
 
 
-//cat sprite functions
+//cat sprite functions method one if-else jQuery
 
-$('#sit-btn').on('click', function(){
+/*$('#sit-btn').on('click', function(){
   $('#tuna').removeClass().addClass('tuna-sit');
 });
 
 $('#walk-btn').on('click', function(){
-
   if($('#tuna').hasClass('tuna')) {
-
-  }  else if ($('#tuna').hasClass('tuna-run')) {
-    $('#tuna').removeClass().addClass('tuna-sit');
-    setTimeout(function(){
-      $('#tuna').removeClass().addClass('tuna-walk');
-      setTimeout(function() {
-        $('#tuna').removeClass().addClass('tuna');
-      }, 400);
-    }, 500);
+  } else if ($('#tuna').hasClass('tuna-run')) {
+      $('#tuna').removeClass().addClass('tuna-sit');
+        setTimeout(function(){
+        $('#tuna').removeClass().addClass('tuna-walk');
+        setTimeout(function() {
+          $('#tuna').removeClass().addClass('tuna');
+        }, 400);
+      }, 500);
   } else {
     $('#tuna').removeClass().addClass('tuna-walk');
     setTimeout(function(){
@@ -425,38 +420,121 @@ $('#walk-btn').on('click', function(){
 $('#run-btn').on('click', function(){
 
   if($('#tuna').hasClass('tuna-run')) {
-
   } else if ($('#tuna').hasClass('tuna')) {
-    $('#tuna').removeClass().addClass('tuna-run');
+      $('#tuna').removeClass().addClass('tuna-run');
   } else {
-
     $('#tuna').removeClass().addClass('tuna-walk');
     setTimeout(function(){
       $('#tuna').removeClass().addClass('tuna-run');
     }, 400);
   }
-});
+});*/
 
+//method two switch and functions.
 
-
-/*
-
-function speedChange(oldClass, newClass) {
-  if(oldClass == )
-  $('#tuna').removeClass(oldClass).addClass(newClass);
-}
-
-$('#sit-btn').on('click', function(){
-  let oldClass = $('#tuna').attr('class');
-  speedChange(oldClass, 'tuna-sit');
+/*$('#sit-btn').on('click', function(){
+  let oldClass = getCatClass();
+  changeCatSpeed(oldClass, 'tuna-sit');
 });
 
 $('#walk-btn').on('click', function(){
-  let oldClass = $('#tuna').attr('class');
-  speedChange(oldClass, 'tuna-walk');
+    let oldClass = getCatClass();
+    switch(oldClass) {
+      case 'tuna-sit':
+        changeCatSpeed(oldClass, 'tuna-walk');
+        transitionChange('tuna', 400);
+      break;
+
+      case 'tuna-run':
+        changeCatSpeed(oldClass, 'tuna-sit');
+        transitionChange('tuna-walk', 400);
+        setTimeout(function() {
+          transitionChange('tuna', 400)
+        }, 400);
+      break;
+
+      default:
+      break;
+    }
+});
+
+$('#run-btn').on('click', function(){
+  let oldClass = getCatClass();
+    switch(oldClass) {
+      case 'tuna':
+        changeCatSpeed(oldClass, 'tuna-run');
+      break;
+
+      case 'tuna-sit':
+        changeCatSpeed(oldClass, 'tuna-walk');
+        transitionChange('tuna-run', 400);
+      break;
+
+      default:
+      break;
+    }
+});
+
+function getCatClass(){
+  return  $('#tuna').attr('class');
+}
+
+function changeCatSpeed(oldClass, newClass) {
+  $('#tuna').removeClass(oldClass).addClass(newClass);
+}
+
+function transitionChange(newClass, delay) {
+  setTimeout(function(){
+    $('#tuna').removeClass().addClass(newClass);
+  }, delay);
+}*/
+
+//method three: jquery switch
+
+$('#sit-btn').on('click', function(){
+  $('#tuna').removeClass().addClass('tuna-sit');
+});
+
+$('#walk-btn').on('click', function(){
+ let oldClass = $('#tuna').attr('class');
+
+  switch(oldClass) {
+    case 'tuna-run':
+      $('#tuna').removeClass().addClass('tuna-sit');
+      setTimeout(function(){
+        $('#tuna').removeClass().addClass('tuna-walk');
+        setTimeout(function() {
+          $('#tuna').removeClass().addClass('tuna');
+        }, 400);
+      }, 500);
+    break;
+
+    case 'tuna-sit':
+      $('#tuna').removeClass().addClass('tuna-walk');
+      setTimeout(function(){
+        $('#tuna').removeClass().addClass('tuna');
+      }, 400);
+    break;
+
+    default: //tuna
+    break;
+  }
 });
 
 $('#run-btn').on('click', function(){
   let oldClass = $('#tuna').attr('class');
-  speedChange(oldClass, 'tuna-run');
-});*/
+  switch (oldClass) {
+    case 'tuna':
+      $('#tuna').removeClass().addClass('tuna-run');
+    break;
+
+    case 'tuna-sit':
+      $('#tuna').removeClass().addClass('tuna-walk');
+      setTimeout(function(){
+        $('#tuna').removeClass().addClass('tuna-run');
+      }, 400);
+
+    default: // tuna-run
+    break;
+  }
+});
