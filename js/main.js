@@ -436,3 +436,27 @@ $('#run-btn').on('click', function(){
     }, 400);
   }
 });
+
+
+
+/*
+
+function speedChange(oldClass, newClass) {
+  if(oldClass == )
+  $('#tuna').removeClass(oldClass).addClass(newClass);
+}
+
+$('#sit-btn').on('click', function(){
+  let oldClass = $('#tuna').attr('class');
+  speedChange(oldClass, 'tuna-sit');
+});
+
+$('#walk-btn').on('click', function(){
+  let oldClass = $('#tuna').attr('class');
+  speedChange(oldClass, 'tuna-walk');
+});
+
+$('#run-btn').on('click', function(){
+  let oldClass = $('#tuna').attr('class');
+  speedChange(oldClass, 'tuna-run');
+});*/
