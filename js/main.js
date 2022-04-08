@@ -197,7 +197,7 @@ setInterval(updateGradient,15);
 
 $('.app-icon').on('click', function(){
   $(this).next().fadeToggle();
-  $('.app-icon').not(this).next().hide();
+  $('.app-icon').not(this).next().fadeOut();
 });
 
 $('.text-block').on('click', function() {
