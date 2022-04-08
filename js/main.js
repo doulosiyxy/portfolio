@@ -10,7 +10,7 @@ $('#home-footer').delay(0).animate({"margin-bottom": "0px"}, 500);
 //$('.four').delay(6100).fadeTo(1500, 0.7);
 $('#logo-icon').animate({height: 220}, 200);
 //$('#contact-text').css('padding-bottom','2000px');
-$('.overlay-sunrise').delay(250).fadeTo(400, 0);
+$('.overlay-sunrise').delay(250).fadeTo(350, 0);
 setTimeout(function () {
   $('.overlay-sunrise').hide();
 }, 2500);
