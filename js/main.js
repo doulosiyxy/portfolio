@@ -396,13 +396,11 @@ function replayTwo() {
   tlTwo.restart();
 }
 
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+/*if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 
 
-  function sunriseRestart() {
-    tlTwo.restart();
-  }
-  /*$('#contact-text').css('padding-bottom','2000px');
+
+  $('#contact-text').css('padding-bottom','2000px');
 
 } else if ($(window).height() > 767 ) {
   $('#skill-btn').on('click', function() {
@@ -411,9 +409,9 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 } else {
   $('#skill-btn').on('click', function() {
     $('#about-title-wrap').delay(840).animate({"top": "0"}, 2300);
-  });*/
+  });
 
-}
+}*/
 
 
 //cat sprite functions method one if-else jQuery
