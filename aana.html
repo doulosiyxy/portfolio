@@ -23,7 +23,7 @@
     <link rel="icon" type="image/png" href="https://www.dl.dropboxusercontent.com/s/19d2jggek8qh95k/favicon.png?dl=0"/>
 
   </head>
-  <body id="background" class="apps">
+  <body id="background" class="apps" onresize="sunriseRestart()">
 
     <header id="about-nav" class="app-header">
       <div class="">
@@ -68,9 +68,9 @@
       <div id="tuna" class="tuna">
       </div>
       <div class="cat-btn-wrapper">
-              <div id="sit-btn" class="cat-btns">SIT</div>
-              <div id="walk-btn" class="cat-btns">WALK</div>
-              <div id="run-btn" class="cat-btns">RUN</div>
+              <div  onclick="catSit('tuna-sit')" id="sit-btn" class="cat-btns">SIT</div>
+              <div onclick="catWalk('tuna-walk')" id="walk-btn" class="cat-btns">WALK</div>
+              <div onclick="catRun('tuna-run')" id="run-btn" class="cat-btns">RUN</div>
       </div>
       <i class="app-icon info material-icons">info</i>
       <div class="text-block">

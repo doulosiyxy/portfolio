@@ -95,9 +95,13 @@ function titleFade() {
   }, 1)
 }
 
-/*if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 
-  $('#contact-text').css('padding-bottom','2000px');
+
+  function sunriseRestart() {
+    sunRiseFast();
+  }
+  /*$('#contact-text').css('padding-bottom','2000px');
 
 } else if ($(window).height() > 767 ) {
   $('#skill-btn').on('click', function() {
@@ -106,9 +110,9 @@ function titleFade() {
 } else {
   $('#skill-btn').on('click', function() {
     $('#about-title-wrap').delay(840).animate({"top": "0"}, 2300);
-  });
+  });*/
 
-}*/
+}
 
 // Digital Clock
 $(document).ready(function() {
@@ -491,7 +495,7 @@ function transitionChange(newClass, delay) {
 
 //method three: jquery switch
 
-$('#sit-btn').on('click', function(){
+/*$('#sit-btn').on('click', function(){
   $('#tuna').removeClass().addClass('tuna-sit');
 });
 
@@ -537,4 +541,139 @@ $('#run-btn').on('click', function(){
     default: // tuna-run
     break;
   }
-});
+});*/
+/*
+function changeSpeed(newClass) {
+  var oldClass = $('#tuna').attr('class');
+
+  switch(newClass) {
+    case 'tuna-sit': changeCatSpeed(oldClass, newClass);
+    break;
+
+    case 'tuna-walk': catWalk(oldClass, newClass);
+
+    break;
+
+    case 'tuna-run': catRun(oldClass, newClass);
+    break;
+
+    default:
+    break;
+  }
+}
+
+function catWalk(oldClass, newClass) {
+  switch(oldClass) {
+    case 'tuna-sit': changeCatSpeed(oldClass, newClass);
+    transitionChange('tuna', 400);
+    break;
+    case 'tuna-run':
+    changeCatSpeed(oldClass, 'tuna-sit');
+    transitionChange(newClass, 400);
+    transitionChange('tuna', 800);
+    break;
+  }
+}
+
+function catRun(oldClass, newClass) {
+  switch(oldClass) {
+    case 'tuna-sit': changeCatSpeed(oldClass, 'tuna-walk');
+    transitionChange(newClass, 400);
+    break;
+    case 'tuna': changeCatSpeed(oldClass, newClass);
+    break;
+  }
+}
+
+function changeCatSpeed(oldClass, newClass) {
+  $('#tuna').removeClass(oldClass).addClass(newClass);
+}
+
+function transitionChange(newClass, delay) {
+  setTimeout(function(){
+    $('#tuna').removeClass().addClass(newClass);
+  }, delay);
+}*/
+
+//shorter functions
+
+/*function changeSpeed(newClass) {
+  var oldClass = $('#tuna').attr('class');
+
+  switch(newClass) {
+    case 'tuna-sit': $('#tuna').removeClass(oldClass).addClass(newClass);
+    break;
+
+    case 'tuna-walk':
+      switch(oldClass) {
+        case 'tuna-sit': changeCatSpeed(oldClass, newClass);
+        transitionChange('tuna', 400);
+        break;
+        case 'tuna-run':
+        changeCatSpeed(oldClass, 'tuna-sit');
+        transitionChange(newClass, 400);
+        transitionChange('tuna', 800);
+        break;
+      }
+    break;
+
+    case 'tuna-run':
+      switch(oldClass) {
+        case 'tuna-sit': changeCatSpeed(oldClass, 'tuna-walk');
+        transitionChange(newClass, 400);
+        break;
+        case 'tuna': changeCatSpeed(oldClass, newClass);
+        break;
+      }
+    break;
+
+    default:
+    break;
+  }
+}
+
+function changeCatSpeed(oldClass, newClass) {
+  $('#tuna').removeClass(oldClass).addClass(newClass);
+}
+
+function transitionChange(newClass, delay) {
+  setTimeout(function(){
+    $('#tuna').removeClass().addClass(newClass);
+  }, delay);
+}*/
+
+function catSit(newClass) {
+  let oldClass = $('#tuna').attr('class');
+  $('#tuna').removeClass(oldClass).addClass(newClass);
+}
+
+function catWalk(newClass) {
+  let oldClass = $('#tuna').attr('class');
+  switch(oldClass) {
+    case 'tuna-sit': $('#tuna').removeClass(oldClass).addClass(newClass);
+    transitionChange('tuna', 400);
+    break;
+    case 'tuna-run':
+    $('#tuna').removeClass(oldClass).addClass('tuna-sit');
+    transitionChange(newClass, 400);
+    transitionChange('tuna', 800);
+    break;
+  }
+}
+
+function catRun(newClass) {
+  let oldClass = $('#tuna').attr('class');
+  switch(oldClass) {
+    case 'tuna-sit': $('#tuna').removeClass(oldClass).addClass('tuna-walk');
+    transitionChange(newClass, 400);
+    break;
+    case 'tuna': $('#tuna').removeClass(oldClass).addClass(newClass);
+    break;
+  }
+}
+
+function transitionChange(newClass, delay) {
+  setTimeout(function(){
+    $('#tuna').removeClass().addClass(newClass);
+  }, delay);
+}
