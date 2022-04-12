@@ -3,14 +3,14 @@
     "id": 1,
     "name": "Globe Artichoke",
     "sow": {
-      "month": "April",
+      "month": "april",
       "time": "Early"
       },
     "plant": {
-      "month": "April",
+      "month": "april",
       "time": "Late"
     },
-    "harvest": "July to September"
+    "harvest": "july to september"
   },
   {
     "id": 2,
@@ -20,113 +20,113 @@
       "time": ""
       },
     "plant": {
-      "month": "February & March",
+      "month": "february & march",
       "time": "Throughout"
     },
-    "harvest": "November to January"
+    "harvest": "november to january"
   },
   {
     "id": 3,
     "name": "Asparagus",
     "sow": {
-      "month": "April",
+      "month": "april",
       "time": "Throughout"
       },
     "plant": {
-      "month": "April",
+      "month": "april",
       "time": "Early"
     },
-    "harvest": "Late April to Early June"
+    "harvest": "Late april to early june"
   },
   {
     "id": 4,
     "name": "Aubergine",
     "sow": {
-      "month": "Late February & March",
+      "month": "Late february & march",
       "time": ""
       },
     "plant": {
-      "month": "April & May",
+      "month": "april & may",
       "time": "Throughout"
     },
-    "harvest": "August to September"
+    "harvest": "august to september"
   },
   {
     "id": 5,
     "name": "Broad Beans",
     "sow": {
-      "month": "March & April",
+      "month": "march & april",
       "time": "Throughout"
       },
     "plant": {
       "month": "",
       "time": ""
     },
-    "harvest": "Late June to Early September"
+    "harvest": "Late june to early September"
   },
   {
     "id": 6,
     "name": "French Beans",
     "sow": {
-      "month": "May & June",
+      "month": "may & june",
       "time": "Throughout"
       },
     "Plant": {
       "month": "",
       "time": ""
     },
-    "harvest": "July to Early October"
+    "harvest": "july to early october"
   },
   {
     "id": 7,
     "name": "Runner Beans",
     "sow": {
-      "month": "Late May & June",
+      "month": "Late may & june",
       "time": ""
       },
     "plant": {
       "month": "",
       "time": ""
     },
-    "harvest": "August to Early October"
+    "harvest": "august to Early october"
   },
   {
     "id": 8,
     "name": "Leef Beet",
     "sow": {
-      "month": "April",
+      "month": "april",
       "time": "Throughout"
       },
     "plant": {
       "month": "",
       "time": ""
     },
-    "harvest": "August to November"
+    "harvest": "august to november"
   },
   {
     "id": 9,
     "name": "Beetroot",
     "sow": {
-      "month": "Late April to June",
+      "month": "Late april to june",
       "time": ""
       },
     "plant": {
       "month": "",
       "time": ""
     },
-    "harvest": "Late June to Early October"
+    "harvest": "Late june to Early october"
   },
   {
     "id": 10,
     "name": "Broccoli",
     "sow": {
-      "month": "Late April to Early May",
+      "month": "Late april to Early may",
       "time": ""
       },
     "plant": {
-      "month": "Late June to Early July",
+      "month": "Late june to Early july",
       "time": ""
     },
-    "harvest": "August to Early October"
+    "harvest": "august to Early october"
   }
 ]
