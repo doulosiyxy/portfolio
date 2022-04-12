@@ -1,0 +1,132 @@
+[
+  {
+    "id": "1",
+    "name": "Globe Artichoke",
+    "sow": {
+      "month": "April",
+      "time": "Early"
+      },
+    "plant": {
+      "month": "April",
+      "time": "Late"
+    },
+    "harvest": "July to September"
+  },
+  {
+    "id": "2",
+    "name": "Jerusalem Artichoke",
+    "sow": {
+      "month": "",
+      "time": ""
+      },
+    "plant": {
+      "month": "February & March",
+      "time": "Throughout"
+    },
+    "harvest": "November to January"
+  },
+  {
+    "id": "3",
+    "name": "Asparagus",
+    "sow": {
+      "month": "April",
+      "time": "Throughout"
+      },
+    "plant": {
+      "month": "April",
+      "time": "Early"
+    },
+    "harvest": "Late April to Early June"
+  },
+  {
+    "id": "4",
+    "name": "Aubergine",
+    "sow": {
+      "month": "Late February & March",
+      "time": ""
+      },
+    "plant": {
+      "month": "April & May",
+      "time": "Throughout"
+    },
+    "harvest": "August to September"
+  },
+  {
+    "id": "5",
+    "name": "Broad Beans",
+    "sow": {
+      "month": "March & April",
+      "time": "Throughout"
+      },
+    "plant": {
+      "month": "",
+      "time": ""
+    },
+    "harvest": "Late June to Early September"
+  },
+  {
+    "id": "6",
+    "name": "French Beans",
+    "sow": {
+      "month": "May & June",
+      "time": "Throughout"
+      },
+    "Plant": {
+      "month": "",
+      "time": ""
+    },
+    "harvest": "July to Early October"
+  },
+  {
+    "id": "7",
+    "name": "Runner Beans",
+    "sow": {
+      "month": "Late May & June",
+      "time": ""
+      },
+    "plant": {
+      "month": "",
+      "time": ""
+    },
+    "harvest": "August to Early October"
+  },
+  {
+    "id": "8",
+    "name": "Leef Beet",
+    "sow": {
+      "month": "April",
+      "time": "Throughout"
+      },
+    "plant": {
+      "month": "",
+      "time": ""
+    },
+    "harvest": "August to November"
+  },
+  {
+    "id": "9",
+    "name": "Beetroot",
+    "sow": {
+      "month": "Late April to June",
+      "time": ""
+      },
+    "plant": {
+      "month": "",
+      "time": ""
+    },
+    "harvest": "Late June to Early October"
+  },
+  {
+    "id": "10",
+    "name": "Broccoli",
+    "sow": {
+      "month": "Late April to Early May",
+      "time": ""
+      },
+    "plant": {
+      "month": "Late June to Early July",
+      "time": ""
+    },
+    "harvest": "August to Early October"
+  },
+]
