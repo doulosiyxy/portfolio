@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Globe Artichoke",
+    "name": "globe artichoke",
     "sow": {
       "month": "april",
       "time": "Early"
@@ -14,7 +14,7 @@
   },
   {
     "id": 2,
-    "name": "Jerusalem Artichoke",
+    "name": "jerusalem artichoke",
     "sow": {
       "month": "",
       "time": ""
@@ -27,7 +27,7 @@
   },
   {
     "id": 3,
-    "name": "Asparagus",
+    "name": "asparagus",
     "sow": {
       "month": "april",
       "time": "Throughout"
@@ -40,7 +40,7 @@
   },
   {
     "id": 4,
-    "name": "Aubergine",
+    "name": "aubergine",
     "sow": {
       "month": "Late february & march",
       "time": ""
@@ -53,7 +53,7 @@
   },
   {
     "id": 5,
-    "name": "Broad Beans",
+    "name": "broad beans",
     "sow": {
       "month": "march & april",
       "time": "Throughout"
@@ -66,7 +66,7 @@
   },
   {
     "id": 6,
-    "name": "French Beans",
+    "name": "french beans",
     "sow": {
       "month": "may & june",
       "time": "Throughout"
@@ -79,7 +79,7 @@
   },
   {
     "id": 7,
-    "name": "Runner Beans",
+    "name": "runner beans",
     "sow": {
       "month": "Late may & june",
       "time": ""
@@ -92,7 +92,7 @@
   },
   {
     "id": 8,
-    "name": "Leef Beet",
+    "name": "leef beet",
     "sow": {
       "month": "april",
       "time": "Throughout"
@@ -105,7 +105,7 @@
   },
   {
     "id": 9,
-    "name": "Beetroot",
+    "name": "beetroot",
     "sow": {
       "month": "Late april to june",
       "time": ""
@@ -118,7 +118,7 @@
   },
   {
     "id": 10,
-    "name": "Broccoli",
+    "name": "broccoli",
     "sow": {
       "month": "Late april to Early may",
       "time": ""
