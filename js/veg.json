@@ -73,16 +73,17 @@
     "id": 6,
     "name": "french beans",
     "sow": {
-      "month": "throughout may & june",
-      "time": "",
+      "month": "may & june",
+      "time": "Throughout",
       "months": "may, june"
       },
-    "Plant": {
+    "plant": {
       "month": "",
       "time": ""
     },
     "harvest": "july to early october"
   },
+  
   {
     "id": 7,
     "name": "runner beans",
