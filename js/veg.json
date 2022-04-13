@@ -71,10 +71,10 @@
   },
   {
     "id": 6,
-    "name": "french beans",
+    "name": "beans french",
     "sow": {
-      "month": "may & june",
-      "time": "Throughout",
+      "month": "throughout may & june",
+      "time": "",
       "months": "may, june"
       },
     "Plant": {
