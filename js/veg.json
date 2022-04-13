@@ -337,5 +337,159 @@
       "time": ""
     },
     "harvest": "late july to november"
+  },
+  {
+    "id": 24,
+    "name": "leek",
+    "sow": {
+      "month": "late march to early april",
+      "time": "",
+      "months": "march, april"
+      },
+    "plant": {
+      "month": "june to early july",
+      "time": ""
+    },
+    "harvest": "november to april"
+  },
+  {
+    "id": 25,
+    "name": "lettuce",
+    "sow": {
+      "month": "february to december",
+      "time": "",
+      "months": "february, march, april, may, june, july, august, september, october, november, december"
+      },
+    "plant": {
+      "month": "",
+      "time": ""
+    },
+    "harvest": "late june to may"
+  },
+  {
+    "id": 26,
+    "name": "marrow",
+    "sow": {
+      "month": "late april (indoors) or late may to early june (outdoors)",
+      "time": "",
+      "months": "april, may, june"
+      },
+    "plant": {
+      "month": "early july when sown indoors",
+      "time": ""
+    },
+    "harvest": "july to october"
+  },
+  {
+    "id": 27,
+    "name": "squash",
+    "sow": {
+      "month": "late april (indoors) or late may to early june (outdoors)",
+      "time": "",
+      "months": "april, may, june"
+      },
+    "plant": {
+      "month": "early july when sown indoors",
+      "time": ""
+    },
+    "harvest": "july to october"
+  },
+  {
+    "id": 28,
+    "name": "pumpkin",
+    "sow": {
+      "month": "late april (indoors) or late may to early june (outdoors)",
+      "time": "",
+      "months": "april, may, june"
+      },
+    "plant": {
+      "month": "early july when sown indoors",
+      "time": ""
+    },
+    "harvest": "july to october"
+  },
+  {
+    "id": 29,
+    "name": "courgette",
+    "sow": {
+      "month": "late april (indoors) or late may to early june (outdoors)",
+      "time": "",
+      "months": "april, may, june"
+      },
+    "plant": {
+      "month": "early july when sown indoors",
+      "time": ""
+    },
+    "harvest": "july to october"
+  },
+  {
+    "id": 30,
+    "name": "onion",
+    "sow": {
+      "month": "late february to march & in august from seed",
+      "time": "",
+      "months": "february, march, april, august"
+      },
+    "plant": {
+      "month": "late march to early april from sets",
+      "time": ""
+    },
+    "harvest": "july to late september"
+  },
+  {
+    "id": 31,
+    "name": "shallot",
+    "sow": {
+      "month": "late february to march & in august from seed",
+      "time": "",
+      "months": "february, march, april, august"
+      },
+    "plant": {
+      "month": "late march to early april from sets",
+      "time": ""
+    },
+    "harvest": "july to late september"
+  },
+  {
+    "id": 32,
+    "name": "parsnip",
+    "sow": {
+      "month": "march",
+      "time": "",
+      "months": "march"
+      },
+    "plant": {
+      "month": "",
+      "time": ""
+    },
+    "harvest": "november to february"
+  },
+  {
+    "id": 33,
+    "name": "pea",
+    "sow": {
+      "month": "february to july & late october to early november",
+      "time": "",
+      "months": "february, march, april, may, june, july, october, november"
+      },
+    "plant": {
+      "month": "",
+      "time": ""
+    },
+    "harvest": "late may to early october"
+  },
+  {
+    "id": 34,
+    "name": "potato",
+    "sow": {
+      "month": "",
+      "time": "",
+      "months": "march, april"
+      },
+    "plant": {
+      "month": "late march to april",
+      "time": ""
+    },
+    "harvest": "july to early october"
   }
 ]
