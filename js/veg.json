@@ -491,5 +491,131 @@
       "time": ""
     },
     "harvest": "july to early october"
+  },
+  {
+    "id": 35,
+    "name": "radish",
+    "sow": {
+      "month": "late march to early june",
+      "time": "",
+      "months": "march, april, may, june"
+      },
+    "plant": {
+      "month": "",
+      "time": ""
+    },
+    "harvest": "may to aug"
+  },
+  {
+    "id": 36,
+    "name": "rhubarb",
+    "sow": {
+      "month": "late february to march",
+      "time": "",
+      "months": "february, march"
+      },
+    "plant": {
+      "month": "",
+      "time": ""
+    },
+    "harvest": "april to early july"
+  },
+  {
+    "id": 37,
+    "name": "salsify",
+    "sow": {
+      "month": "late april",
+      "time": "",
+      "months": "april"
+      },
+    "plant": {
+      "month": "",
+      "time": ""
+    },
+    "harvest": "late october to early february"
+  },
+  {
+    "id": 38,
+    "name": "scorzonera",
+    "sow": {
+      "month": "late april",
+      "time": "",
+      "months": "april"
+      },
+    "plant": {
+      "month": "",
+      "time": ""
+    },
+    "harvest": "late october to early february"
+  },
+  {
+    "id": 39,
+    "name": "spinach",
+    "sow": {
+      "month": "late march to may, august & september",
+      "time": "",
+      "months": "march, april, may, august, september"
+      },
+    "plant": {
+      "month": "",
+      "time": ""
+    },
+    "harvest": "late may to april"
+  },
+  {
+    "id": 40,
+    "name": "swede",
+    "sow": {
+      "month": "late may to early june",
+      "time": "",
+      "months": "may, june"
+      },
+    "plant": {
+      "month": "",
+      "time": ""
+    },
+    "harvest": "november to february"
+  },
+  {
+    "id": 41,
+    "name": "sweet corn",
+    "sow": {
+      "month": "late april (indoors) & late may (outdoors) ",
+      "time": "",
+      "months": "april, may"
+      },
+    "plant": {
+      "month": "late may, early when sown indoors",
+      "time": ""
+    },
+    "harvest": "late august to early september"
+  },
+  {
+    "id": 42,
+    "name": "greenhouse tomato",
+    "sow": {
+      "month": "early january (heated) or late february to early march (cold)",
+      "time": "",
+      "months": "january, february, march"
+      },
+    "plant": {
+      "month": "late february to early march or late april to early may",
+      "time": ""
+    },
+    "harvest": "july to early october"
+  },
+  {
+    "id": 42,
+    "name": "outdoor tomato",
+    "sow": {
+      "month": "late march to early april",
+      "time": "",
+      "months": "march, april"
+      },
+    "plant": {
+      "month": "late may",
+      "time": ""
+    },
+    "harvest": "early august to late september"
   }
 ]
