@@ -617,5 +617,33 @@
       "time": ""
     },
     "harvest": "early august to late september"
+  },
+  {
+    "id": 43,
+    "name": "Turnip",
+    "sow": {
+      "month": "late march to april & late july to early august",
+      "time": "",
+      "months": "march, april, july, august"
+      },
+    "plant": {
+      "month": "",
+      "time": ""
+    },
+    "harvest": "late october to december. Cut tops march or april."
+  },
+  {
+    "id": 43,
+    "name": "Turnip",
+    "sow": {
+      "month": "late march to april & late july to early august",
+      "time": "",
+      "months": "march, april, july, august"
+      },
+    "plant": {
+      "month": "",
+      "time": ""
+    },
+    "harvest": "late october to december. Cut tops march or april."
   }
 ]
