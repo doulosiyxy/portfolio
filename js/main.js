@@ -726,7 +726,7 @@ $(document).ready( function () {
 });
 
 function preloadVegValues() {
-  var vegJsonFile = "https://doulosiyxy.github.io/portfolio/js/veg.json";
+  var vegJsonFile = "js/veg.json";
   $.getJSON(vegJsonFile, function(vegData) {
     for(i = 0; i < vegData.length; i++) {
       var vegName = vegData[i].name;
@@ -740,7 +740,7 @@ function preloadVegValues() {
 function whichVegWhen() {
 $('#veg-input').hide();
 $('#veg-output').show();
-var vegJsonFile = "https://doulosiyxy.github.io/portfolio/js/veg.json";
+var vegJsonFile = "js/veg.json";
 var vegMonthInput = document.getElementById('vinput').value;
 vegMonthInput = vegMonthInput.toLowerCase();
 const monthArray = ["jan", "january", "feb", "february", "mar", "march", "apr", "april", "may", "jun", "june", "jul", "july", "aug", "august", "sep", "sept", "september", "oct", "october", "nov", "november", "dec", "december"];
