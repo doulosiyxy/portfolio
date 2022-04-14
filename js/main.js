@@ -726,7 +726,7 @@ $(document).ready( function () {
 });
 
 function preloadVegValues() {
-  var vegJsonFile = "js/veg.json";
+  var vegJsonFile = "https://doulosiyxy.github.io/portfolio/js/veg.json";
   $.getJSON(vegJsonFile, function(vegData) {
     for(i = 0; i < vegData.length; i++) {
       var vegName = vegData[i].name;
@@ -740,7 +740,7 @@ function preloadVegValues() {
 function whichVegWhen() {
 $('#veg-input').hide();
 $('#veg-output').show();
-var vegJsonFile = "js/veg.json";
+var vegJsonFile = "https://doulosiyxy.github.io/portfolio/js/veg.json";
 var vegMonthInput = document.getElementById('vinput').value;
 vegMonthInput = vegMonthInput.toLowerCase();
 const monthArray = ["jan", "january", "feb", "february", "mar", "march", "apr", "april", "may", "jun", "june", "jul", "july", "aug", "august", "sep", "sept", "september", "oct", "october", "nov", "november", "dec", "december"];
@@ -767,10 +767,7 @@ switch (vegMonthInput) {
   case 'aug':
     vegMonthInput = 'august';
     break;
-  case 'sep':
-    vegMonthInput = 'september';
-    break;
-  case 'sept':
+  case 'sep': case 'sept':
     vegMonthInput = 'september';
     break;
   case 'oct':
@@ -782,16 +779,16 @@ switch (vegMonthInput) {
   case 'dec':
     vegMonthInput = 'december';
     break;
-  case 'artichoke':
-    vegMonthInput = 'globe artichoke';
-    break;
   default:
+  break;
 }
 
 //getJSON to retrieve JSON file from URL
 $.getJSON(vegJsonFile, function(vegData) {
   //forLoop to cycle through veg names
   for(i = 0; i < vegData.length; i++) {
+
+
     //cycles through veg names to find a match. If match is found outputs
     //template literal to HTML and stops loop.
     if (vegData[i].name == vegMonthInput) {
@@ -829,7 +826,7 @@ $.getJSON(vegJsonFile, function(vegData) {
       }
     }
     else { // error handling this is the output if an incorrect spelling or absent veg was entered.
-      document.getElementById('veg').innerHTML = "Did you enter a vegetable or month? Perhaps, check your spelling."
+      document.getElementById('veg').innerHTML = "Enter a vegetable or month or check your spelling."
     }
   }
 });

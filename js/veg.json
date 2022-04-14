@@ -28,6 +28,20 @@
     "harvest": "november to january"
   },
   {
+    "id": 2.1,
+    "name": "artichoke",
+    "sow": {
+      "month": "",
+      "time": "",
+      "months": "february, march"
+      },
+    "plant": {
+      "month": "february & march",
+      "time": "Throughout"
+    },
+    "harvest": "november to january"
+  },
+  {
     "id": 3,
     "name": "asparagus",
     "sow": {
