@@ -826,7 +826,7 @@ $.getJSON(vegJsonFile, function(vegData) {
       }
     }
     else { // error handling this is the output if an incorrect spelling or absent veg was entered.
-      document.getElementById('veg-para').innerHTML = "Please enter a vegetable or month from the list.";
+      document.getElementById('veg').innerHTML = `<span style="font-size: 13px">Please enter a vegetable or month from the list.</span>`;
     }
   }
 });
