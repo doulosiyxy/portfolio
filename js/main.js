@@ -95,13 +95,13 @@ function titleFade() {
   }, 1)
 }
 
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+/*if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 
 
   function sunriseRestart() {
     sunRiseFast();
   }
-  /*$('#contact-text').css('padding-bottom','2000px');
+  $('#contact-text').css('padding-bottom','2000px');
 
 } else if ($(window).height() > 767 ) {
   $('#skill-btn').on('click', function() {
@@ -110,9 +110,9 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 } else {
   $('#skill-btn').on('click', function() {
     $('#about-title-wrap').delay(840).animate({"top": "0"}, 2300);
-  });*/
+  });
 
-}
+}*/
 
 // Digital Clock
 $(document).ready(function() {
@@ -693,4 +693,157 @@ function transitionChange(newClass, delay) {
   setTimeout(function(){
     $('#tuna').removeClass().addClass(newClass);
   }, delay);
+}
+
+//whichVegWhen
+//Json request from w3. Doesn't work.
+/*
+let xmlhttp = new XMLHttpRequest();
+xmlhttp.onload = function() {
+  let vegArr = JSON.parse(this.responseText);
+  console.log(vegArr[1]);
+  }
+
+xmlhttp.open("GET", "https://doulosiyxy.github.io/portfolio/js/veg.json", true);
+xmlhttp.send();*/
+
+//Json request using fetch. Works
+
+/*fetch("https://doulosiyxy.github.io/portfolio/js/veg.json")
+.then(response => response.json())
+.then(data => {
+  let x = 2
+  console.log(data)
+  document.getElementById('veg').innerText = `Sow ${data[x].name} ${data[x].sow.time} ${data[x].sow.month}.`
+});*/
+
+//jQuery method works
+
+//function to preload veg input option values.
+
+$(document).ready( function () {
+  preloadVegValues();
+});
+
+function preloadVegValues() {
+  var vegJsonFile = "https://doulosiyxy.github.io/portfolio/js/veg.json";
+  $.getJSON(vegJsonFile, function(vegData) {
+    for(i = 0; i < vegData.length; i++) {
+      var vegName = vegData[i].name;
+      var secondVegName = vegName.substring(vegName.indexOf(' ') + 1);
+      var vegNameToCapital = vegName.substring(0, 1).toUpperCase();
+      var secondVegNameToCapital = secondVegName.substring(0, 1).toUpperCase();
+      vegName = vegName.substring(1);
+      if (vegName.includes(" ")) {vegName = vegName.substring(0, vegName.indexOf(" "));}
+      vegName = vegNameToCapital + vegName;
+      secondVegName = secondVegName.substring(1);
+      secondVegName = secondVegNameToCapital + secondVegName;
+      var finalVegName = (vegData[i].name.includes(' ')) ? vegName + " " + secondVegName : vegName;
+      document.getElementById('veg-datalist').innerHTML += `<option value="${finalVegName}">`
+    }
+  });
+}
+
+//function to get results based on users input value
+function whichVegWhen() {
+$('#veg-input').hide();
+$('#veg-output').show();
+var vegJsonFile = "https://doulosiyxy.github.io/portfolio/js/veg.json";
+var vegMonthInput = document.getElementById('vinput').value;
+vegMonthInput = vegMonthInput.toLowerCase();
+const monthArray = ["jan", "january", "feb", "february", "mar", "march", "apr", "april", "may", "jun", "june", "jul", "july", "aug", "august", "sep", "sept", "september", "oct", "october", "nov", "november", "dec", "december"];
+
+switch (vegMonthInput) {
+  case 'jan':
+    vegMonthInput = 'january';
+    break;
+  case 'feb':
+    vegMonthInput = 'february';
+    break;
+  case 'mar':
+    vegMonthInput = 'march';
+    break;
+  case 'apr':
+    vegMonthInput = 'april';
+    break;
+  case 'june':
+    vegMonthInput = 'june';
+    break;
+  case 'jul':
+    vegMonthInput = 'july';
+    break;
+  case 'aug':
+    vegMonthInput = 'august';
+    break;
+  case 'sep':
+    vegMonthInput = 'september';
+    break;
+  case 'sept':
+    vegMonthInput = 'september';
+    break;
+  case 'oct':
+    vegMonthInput = 'october';
+    break;
+  case 'nov':
+    vegMonthInput = 'november';
+    break;
+  case 'dec':
+    vegMonthInput = 'december';
+    break;
+  case 'artichoke':
+    vegMonthInput = 'globe artichoke';
+    break;
+  default:
+}
+
+//getJSON to retrieve JSON file from URL
+$.getJSON(vegJsonFile, function(vegData) {
+  //forLoop to cycle through veg names
+  for(i = 0; i < vegData.length; i++) {
+    //cycles through veg names to find a match. If match is found outputs
+    //template literal to HTML and stops loop.
+    if (vegData[i].name == vegMonthInput) {
+      let sow = (vegData[i].sow.time || vegData[i].sow.month) ? `Sow ${vegData[i].name} ${vegData[i].sow.time} ${vegData[i].sow.month}.<br><br>` : "";
+      let plant = (vegData[i].plant.time || vegData[i].plant.month) ? `Plant ${vegData[i].plant.time} ${vegData[i].plant.month}. <br><br>` : "";
+      if (sow == "") {plant = `Plant ${vegData[i].name} ${vegData[i].plant.time} ${vegData[i].plant.month}. <br><br>`};
+      let harvest = (vegData[i].harvest) ? `Harvest ${vegData[i].harvest}.` : "";
+      let vegTemplate = sow + plant + harvest;
+      document.getElementById('veg').innerHTML = vegTemplate.toUpperCase();
+      break;
+      //If match is not found else if statment finds whether or not input was a month.
+    } else if (monthArray.includes(vegMonthInput)) {
+      //If input was matches a month, another forLoop cycles through sow months.
+        for(i = 0; i < vegData.length; i++) {
+          var vegMonth = vegData[i].sow.months;
+          var vegName = vegData[i].name;
+          //If statement checks for veg with sow month matching the input, and outputs
+          //veg names for each in a template literal to HTML.
+          // It also counts to be used later.
+          if(vegMonth.includes(vegMonthInput)) {
+            var count = 0;
+            count++;
+            document.getElementById('veg').innerHTML += `${vegName.toUpperCase()} <br>`;
+          }
+          // This if else statement outputs different HTML depending on whether or
+          //not matches were found.
+          if(count > 0) {
+            document.getElementById('veg-para').innerHTML = `In ${vegMonthInput}, you can sow or plant:`;
+          }  else {
+            document.getElementById('veg-para').innerHTML = `In ${vegMonthInput}, there is nothing to sow.`;
+        }
+      }
+    }
+    else { //this is the output if a month or veg name or mispelling was entered.
+      document.getElementById('veg').innerHTML = "Did you enter a vegetable or month? Perhaps, check your spelling."
+    }
+  }
+});
+}
+
+function vegReset() {
+  $('#veg-input').show();
+  $('#veg-output').hide();
+  document.getElementById('veg').innerHTML = "";
+  document.getElementById('veg-para').innerHTML = "";
+  document.getElementById('vinput').value = "";
 }

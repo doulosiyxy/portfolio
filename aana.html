@@ -24,6 +24,11 @@
 
   </head>
   <body id="background" class="apps">
+    <div id="preload-hack" style="display:none">
+      <img src="assets/sprite_catwalk_small.png">
+      <img src="assets/sprite_catsit_small.png">
+      <img src="assets/sprite_catrun_small.png">
+    </div>
 
     <header id="about-nav" class="app-header">
       <div class="">
@@ -55,7 +60,7 @@
         </div>
         <i class="app-icon info material-icons">info</i>
         <div class="text-block">
-          <div class="app-text">I created this animation using the GSAP library. <br> <br> Click the sun to retart the animation. <br> <br> If the images fail to load in Safari, refresh until they load.</div>
+          <div class="app-text">ANIMATED SUNRISE <br> <br>I created this animation using the GSAP library. <br> <br> Click the sun to retart the animation. <br> <br> If the images fail to load in Safari, refresh until they load.</div>
         </div>
       </div>
     </div>
@@ -74,7 +79,7 @@
       </div>
       <i class="app-icon info material-icons">info</i>
       <div class="text-block">
-        <div class="app-text">This is not a gif. <br> <br> I used CSS to animate a sprite. <br> <br> Imitating cell animation. <br> <br> Why not tell her to do something?<br> <br> Thanks to Rachel Nabors.</div>
+        <div class="app-text">TUNA CAT <br> <br>This is not a gif. <br> <br> I used CSS to animate a sprite. <br> <br> Imitating cell animation. <br> <br> Why not tell her to do something?<br> <br> Thanks to Rachel Nabors.</div>
       </div>
     </div>
 
@@ -101,9 +106,11 @@
     </div>
     <i class="app-icon info material-icons">info</i>
     <div class="text-block">
-      <div class="app-text">This dynamic, orbital menu is animated using GSAP. </div>
+      <div class="app-text">ORBITAL MENU <br> <br> This dynamic, orbital menu is animated using GSAP. </div>
     </div>
   </div>
+
+  <!--clock-->
 
   <div id="all" class="col-sm-4 even app">
     <div id="clockwrapper">
@@ -112,11 +119,49 @@
       <div id="clock"></div>
       <i class="app-icon info material-icons">info</i>
       <div class="text-block">
-        <div class="app-text">This digital clock uses JavaScript to output to HMTL.</div>
+
+        <div class="app-text">DIGITAL CLOCK <br> <br> This digital clock uses JavaScript to output to HMTL.</div>
       </div>
     </div>
   </div>
 
+  <!--whichVegWhen-->
+
+  <div  class="col-sm-4 app which-veg-when">
+
+    <form id="veg-input" onsubmit="event.preventDefault(); whichVegWhen()">
+      <h2>Which Veg When?</h2>
+      <input list="veg-datalist" type="text" id="vinput" name="vinput" placeholder="Enter a vegetable or month...">
+        <datalist id="veg-datalist" style="height:5.1em;overflow:hidden">
+          <option value="January">
+          <option value="February">
+          <option value="March">
+          <option value="April">
+          <option value="May">
+          <option value="June">
+          <option value="July">
+          <option value="August">
+          <option value="September">
+          <option value="October">
+          <option value="November">
+          <option value="December">
+        </datalist>
+      <button type="button" onclick="whichVegWhen()">Search</button>
+    </form>
+
+    <div id="veg-output">
+        <p id="veg-para" class="" ></p>
+        <p id="veg" class="" ></p>
+        <button type="button" id="search" onclick="vegReset()">Search Again</button>
+    </div>
+
+    <i class="app-icon info material-icons">info</i>
+    <div class="text-block">
+      <div class="app-text">WHICH VEG WHEN? <br> <br>Find out which vegetables to sow, plant and harvest when. <br> <br> This app outputs JSON to HTML.</div>
+    </div>
+  </div>
+
+<!--sunmoon-->
 
   <div  class="col-sm-4 app">
     <div id="orb" class= "sun-orb">
@@ -127,17 +172,10 @@
     <div id="sky" class="day-sunmoon"></div>
     <i class="app-icon info material-icons">info</i>
     <div class="text-block">
-      <div class="app-text">Click the orb to turn day into night and night into day. <br> <br> This uses jQuery to toggle classes.</div>
+      <div class="app-text">SUN MOON <br> <br>Click the orb to turn day into night and night into day. <br> <br> This uses jQuery to toggle classes.</div>
     </div>
 
   </div>
-
-    <!--<div  class="col-sm-4 app">
-      <i class="app-icon info material-icons">info</i>
-      <div class="text-block">
-        <div class="app-text"></div>
-      </div>
-    </div>-->
 
 </div>
 
