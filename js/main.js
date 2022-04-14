@@ -730,16 +730,8 @@ function preloadVegValues() {
   $.getJSON(vegJsonFile, function(vegData) {
     for(i = 0; i < vegData.length; i++) {
       var vegName = vegData[i].name;
-      var secondVegName = vegName.substring(vegName.indexOf(' ') + 1);
-      var vegNameToCapital = vegName.substring(0, 1).toUpperCase();
-      var secondVegNameToCapital = secondVegName.substring(0, 1).toUpperCase();
-      vegName = vegName.substring(1);
-      if (vegName.includes(" ")) {vegName = vegName.substring(0, vegName.indexOf(" "));}
-      vegName = vegNameToCapital + vegName;
-      secondVegName = secondVegName.substring(1);
-      secondVegName = secondVegNameToCapital + secondVegName;
-      var finalVegName = (vegData[i].name.includes(' ')) ? vegName + " " + secondVegName : vegName;
-      document.getElementById('veg-datalist').innerHTML += `<option value="${finalVegName}">`
+      let capitalisedVeg = capitalise(vegName);
+      document.getElementById('veg-datalist').innerHTML += `<option value="${capitalisedVeg}">`
     }
   });
 }
@@ -818,26 +810,48 @@ $.getJSON(vegJsonFile, function(vegData) {
           var vegName = vegData[i].name;
           //If statement checks for veg with sow month matching the input, and outputs
           //veg names for each in a template literal to HTML.
-          // It also counts to be used later.
+          //It also counts to be used later.
           if(vegMonth.includes(vegMonthInput)) {
             var count = 0;
             count++;
             document.getElementById('veg').innerHTML += `${vegName.toUpperCase()} <br>`;
           }
+          // this calls a function, at the bottom of the page that capitalises
+          // a word and assigns it to a new variable.
+          let capitalisedMonth = capitalise(vegMonthInput);
           // This if else statement outputs different HTML depending on whether or
           //not matches were found.
           if(count > 0) {
-            document.getElementById('veg-para').innerHTML = `In ${vegMonthInput}, you can sow or plant:`;
+            document.getElementById('veg-para').innerHTML = `In ${capitalisedMonth}, you can sow or plant:`;
           }  else {
-            document.getElementById('veg-para').innerHTML = `In ${vegMonthInput}, there is nothing to sow.`;
+            document.getElementById('veg-para').innerHTML = `In ${capitalisedMonth}, there is nothing to sow.`;
         }
       }
     }
-    else { //this is the output if a month or veg name or mispelling was entered.
+    else { // error handling this is the output if an incorrect spelling or absent veg was entered.
       document.getElementById('veg').innerHTML = "Did you enter a vegetable or month? Perhaps, check your spelling."
     }
   }
 });
+}
+
+//this function gives both words in one or two words strings a capital first letter.
+function capitalise(word) {
+  var capitalLetter = word.substring(0, 1).toUpperCase();
+  word = word.substring(1);
+  var capitalisedWord = capitalLetter + word;
+
+  if(word.includes(' ')) {
+    var secondWord = word.substring(word.indexOf(' ') + 1);
+    var secondCapitalLetter = secondWord.substring(0, 1).toUpperCase();
+    secondWord = secondWord.substring(1);
+    var capitalisedSecondWord = secondCapitalLetter + secondWord;
+    capitalisedWord = capitalisedWord.substring(0, capitalisedWord.indexOf(" "));
+    console.log(capitalisedWord);
+    return capitalisedWord + " " + capitalisedSecondWord;
+  }
+
+  return capitalisedWord;
 }
 
 function vegReset() {
