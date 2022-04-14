@@ -1425,8 +1425,9 @@ button.sun-rise:hover {
 }
 
 #veg {
-  max-height: 170px;
-  overflow: scroll;
+  max-height: 165px;
+  overflow-y: scroll;
+  overflow: -moz-scrollbars-vertical;
   font-size: 11px;
 }
 
