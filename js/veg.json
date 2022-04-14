@@ -268,7 +268,7 @@
   },
   {
     "id": 19,
-    "name": "cucumber greenhouse",
+    "name": "greenhouse cucumber",
     "sow": {
       "month": "late february to late april",
       "time": "",
@@ -282,7 +282,7 @@
   },
   {
     "id": 20,
-    "name": "cucumber outdoors",
+    "name": "outdoor cucumber",
     "sow": {
       "month": "late april (indoors) or late may to early june (outdoors)",
       "time": "",
