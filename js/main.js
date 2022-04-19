@@ -451,7 +451,7 @@ $('#run-btn').on('click', function(){
   }
 });*/
 
-//method two switch and functions.
+//method two: switch and functions.
 
 /*$('#sit-btn').on('click', function(){
   let oldClass = getCatClass();
@@ -659,13 +659,14 @@ function transitionChange(newClass, delay) {
   }, delay);
 }*/
 
+
 function catSit(newClass) {
-  let oldClass = $('#tuna').attr('class');
+  let oldClass = getOldClass();
   $('#tuna').removeClass(oldClass).addClass(newClass);
 }
 
 function catWalk(newClass) {
-  let oldClass = $('#tuna').attr('class');
+  let oldClass = getOldClass();
   switch(oldClass) {
     case 'tuna-sit': $('#tuna').removeClass(oldClass).addClass(newClass);
     transitionChange('tuna', 400);
@@ -679,7 +680,7 @@ function catWalk(newClass) {
 }
 
 function catRun(newClass) {
-  let oldClass = $('#tuna').attr('class');
+  let oldClass = getOldClass();
   switch(oldClass) {
     case 'tuna-sit': $('#tuna').removeClass(oldClass).addClass('tuna-walk');
     transitionChange(newClass, 400);
@@ -694,6 +695,11 @@ function transitionChange(newClass, delay) {
     $('#tuna').removeClass().addClass(newClass);
   }, delay);
 }
+
+function getOldClass() {
+  return $('#tuna').attr('class');
+}
+
 
 //whichVegWhen
 //Json request from w3. Doesn't work.
