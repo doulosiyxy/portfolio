@@ -822,6 +822,7 @@ $.getJSON(vegJsonFile, function(vegData) {
           // this calls a function, at the bottom of the page that capitalises
           // a word and assigns it to a new variable.
           let capitalisedMonth = capitalise(vegMonthInput);
+
           // This if else statement outputs different HTML depending on whether or
           //not matches were found.
           if(count > 0) {
@@ -839,8 +840,9 @@ $.getJSON(vegJsonFile, function(vegData) {
 }
 
 //this function gives both words in one or two words strings a capital first letter.
-function capitalise(word) {
-  var capitalLetter = word.substring(0, 1).toUpperCase();
+//first attempt
+/*function capitalise(word) {
+  var capitalLetter = word[0].toUpperCase();
   word = word.substring(1);
   var capitalisedWord = capitalLetter + word;
 
@@ -850,12 +852,24 @@ function capitalise(word) {
     secondWord = secondWord.substring(1);
     var capitalisedSecondWord = secondCapitalLetter + secondWord;
     capitalisedWord = capitalisedWord.substring(0, capitalisedWord.indexOf(" "));
-    console.log(capitalisedWord);
     return capitalisedWord + " " + capitalisedSecondWord;
   }
 
   return capitalisedWord;
+}*/
+
+//new, better way in order to capitalise every word in a string
+
+function capitalise(word) {
+  let words = word.split(" ");
+    for (let i = 0; i < words.length; i++) {
+        words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+    }
+  return words.join(" ");
 }
+
+
+
 
 function vegReset() {
   $('#veg-input').show();
