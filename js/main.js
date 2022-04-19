@@ -860,12 +860,12 @@ $.getJSON(vegJsonFile, function(vegData) {
 
 //new, better way in order to capitalise every word in a string
 
-function capitalise(word) {
-  let words = word.split(" ");
-    for (let i = 0; i < words.length; i++) {
-        words[i] = words[i][0].toUpperCase() + words[i].substr(1);
+function capitalise(word) { // receives vegName as argument
+  let words = word.split(" "); // splits vegName string into array of each word, removing whitesplace.
+    for (let i = 0; i < words.length; i++) { // for loop iterate through array
+        words[i] = words[i][0].toUpperCase() + words[i].substr(1); // updates each word in the array.
     }
-  return words.join(" ");
+  return words.join(" "); // joins the updated words into one string again.
 }
 
 
