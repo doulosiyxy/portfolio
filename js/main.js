@@ -797,7 +797,7 @@ $.getJSON(vegJsonFile, function(vegData) {
 
     //cycles through veg names to find a match. If match is found outputs
     //template literal to HTML and stops loop.
-    if (vegData[i].name == vegMonthInput) {
+    if (vegData[i].name.includes(vegMonthInput)) {
       let sow = (vegData[i].sow.time || vegData[i].sow.month) ? `Sow ${vegData[i].name} ${vegData[i].sow.time} ${vegData[i].sow.month}.<br><br>` : "";
       let plant = (vegData[i].plant.time || vegData[i].plant.month) ? `Plant ${vegData[i].plant.time} ${vegData[i].plant.month}. <br><br>` : "";
       if (sow == "") {plant = `Plant ${vegData[i].name} ${vegData[i].plant.time} ${vegData[i].plant.month}. <br><br>`};

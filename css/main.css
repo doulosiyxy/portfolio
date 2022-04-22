@@ -1350,24 +1350,35 @@ button.sun-rise:hover {
   color: rgba(0, 0, 0, 0.8);
   transition: .2s;
 }
-
-#sit-btn {
-
+/*This code below creates the animated underline for cat buttons. It is created as a
+Pseudo element, using ::after, and made invisible by using the scaleX() function set to 0.
+The hover then changes this to 1 to make it appear. The transform origin property
+determines how the line moves in and out.*/
+.cat-btns:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  /*transform-origin: bottom right;*/
+  transition: transform 0.25s ease-out;
+  background-color: rgba(0, 0, 0, 1);
 }
 
-#walk-btn {
-
-
+.cat-btns:hover:after {
+  transform: scaleX(1);
+  /*transform-origin: bottom left;*/
 }
 
-#run-btn {
-
+.cat-btns:active:after {
+  border: 2px solid black;
 }
 
 .cat-btns:hover {
   cursor: pointer;
-  border-bottom: 2px solid black;
-  color: rgba(0, 0, 0, 1);
 }
 
 /*whichVegWhen*/

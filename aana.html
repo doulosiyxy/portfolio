@@ -73,7 +73,7 @@
       <div id="tuna" class="tuna">
       </div>
       <div class="cat-btn-wrapper">
-              <div  onclick="catSit('tuna-sit')" id="sit-btn" class="cat-btns">SIT</div>
+              <div onclick="catSit('tuna-sit')" id="sit-btn" class="cat-btns">SIT</div>
               <div onclick="catWalk('tuna-walk')" id="walk-btn" class="cat-btns">WALK</div>
               <div onclick="catRun('tuna-run')" id="run-btn" class="cat-btns">RUN</div>
       </div>
@@ -131,7 +131,7 @@
 
     <form id="veg-input" onsubmit="event.preventDefault(); whichVegWhen()">
       <h2>Which Veg When?</h2>
-      <input list="veg-datalist" type="text" id="vinput" name="vinput" placeholder="Select a vegetable or month...">
+      <input list="veg-datalist" type="text" id="vinput" name="vinput" placeholder="Select a vegetable or month..." required>
         <datalist id="veg-datalist" style="height:5.1em;overflow:hidden">
           <option value="January">
           <option value="February">
