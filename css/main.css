@@ -1373,10 +1373,6 @@ determines how the line moves in and out.*/
   /*transform-origin: bottom left;*/
 }
 
-.cat-btns:active:after {
-  border: 2px solid black;
-}
-
 .cat-btns:hover {
   cursor: pointer;
 }
