@@ -659,19 +659,7 @@ function transitionChange(newClass, delay) {
   }, delay);
 }*/
 
-if(annyang) {
 
-  var catCommand = {
-    'sit': function() {catSit('tuna-sit')},
-    'walk': function() {catWalk('tuna-walk')},
-    'run': function() {catRun('tuna-run')}
-  };
-
-  annyang.addCommands(catCommand);
-
-  annyang.start();
-
-}
 
 function catSit(newClass) {
   let oldClass = getOldClass();
