@@ -659,6 +659,19 @@ function transitionChange(newClass, delay) {
   }, delay);
 }*/
 
+if(annyang) {
+
+  var catCommand = {
+    'sit': function() {catSit('tuna-sit')},
+    'walk': function() {catWalk('tuna-walk')},
+    'run': function() {catRun('tuna-run')}
+  };
+
+  annyang.addCommands(catCommand);
+
+  annyang.start();
+
+}
 
 function catSit(newClass) {
   let oldClass = getOldClass();
@@ -869,8 +882,6 @@ function capitalise(word) { // receives vegName as argument
 }
 
 
-
-
 function vegReset() {
   $('#veg-input').show();
   $('#veg-output').hide();
@@ -878,3 +889,10 @@ function vegReset() {
   document.getElementById('veg-para').innerHTML = "";
   document.getElementById('vinput').value = "";
 }
+
+//TRAMMEL
+$('#trammel-circle').on('click', function() {
+  for(let x = 0; x < 8; x++) {
+    $('.trammel-line').delay(220).eq(x).animate({height: 'toggle'}, 500, "swing");
+  }
+});

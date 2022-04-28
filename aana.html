@@ -83,6 +83,49 @@
       </div>
     </div>
 
+    <!--Trammel-->
+
+    <div  class="col-sm-4 app trammel">
+      <div id="trammel-circle" class="">
+        <div class="dot-wrapper">
+          <div id="dot-one" class="trammel-dot"></div>
+        </div>
+        <div class="dot-wrapper">
+          <div id="dot-two" class="trammel-dot"></div>
+        </div>
+        <div class="dot-wrapper">
+          <div id="dot-three" class="trammel-dot"></div>
+        </div>
+        <div class="dot-wrapper">
+          <div id="dot-four" class="trammel-dot"></div>
+        </div>
+        <div class="dot-wrapper">
+          <div id="dot-five" class="trammel-dot"></div>
+        </div>
+        <div class="dot-wrapper">
+          <div id="dot-six" class="trammel-dot"></div>
+        </div>
+        <div class="dot-wrapper">
+          <div id="dot-seven" class="trammel-dot"></div>
+        </div>
+        <div class="dot-wrapper">
+          <div id="dot-eight" class="trammel-dot"></div>
+        </div>
+        <div id="line-one" class="trammel-line"></div>
+        <div id="line-two" class="trammel-line"></div>
+        <div id="line-three" class="trammel-line"></div>
+        <div id="line-four" class="trammel-line"></div>
+        <div id="line-five" class="trammel-line"></div>
+        <div id="line-six" class="trammel-line"></div>
+        <div id="line-seven" class="trammel-line"></div>
+        <div id="line-eight" class="trammel-line"></div>
+      </div>
+      <i class="app-icon info material-icons">info</i>
+      <div class="text-block">
+        <div class="app-text">THE TRAMMEL OF ARCHIMEDES <br> <br>The dots appear to move in a circle. But each dot is moving along its own linear path. <br><br> Click the circle to show the paths. <br><br> Maths is actually quite cool.</div>
+      </div>
+    </div>
+
   <!--orbital-->
   <div class="col-sm-4 app orbital">
     <div class="orbital-wrapper">
@@ -119,7 +162,6 @@
       <div id="clock"></div>
       <i class="app-icon info material-icons">info</i>
       <div class="text-block">
-
         <div class="app-text">DIGITAL CLOCK <br> <br> This digital clock uses JavaScript to output to HMTL.</div>
       </div>
     </div>
@@ -128,7 +170,6 @@
   <!--whichVegWhen-->
 
   <div  class="col-sm-4 app which-veg-when">
-
     <form id="veg-input" onsubmit="event.preventDefault(); whichVegWhen()">
       <h2>Which Veg When?</h2>
       <input list="veg-datalist" type="text" id="vinput" name="vinput" placeholder="Select a vegetable or month..." required>
@@ -148,13 +189,11 @@
         </datalist>
       <button type="button" onclick="whichVegWhen()">Search</button>
     </form>
-
     <div id="veg-output">
         <p id="veg-para"></p>
         <p id="veg" ></p>
         <button type="button" id="search" onclick="vegReset()">Search Again</button>
     </div>
-
     <i class="app-icon info material-icons">info</i>
     <div class="text-block">
       <div class="app-text">WHICH VEG WHEN? <br> <br>Find out which vegetables to sow, plant and harvest when. <br> <br> This app outputs JSON to HTML using JavaScript & jQuery.</div>
@@ -174,12 +213,9 @@
     <div class="text-block">
       <div class="app-text">SUN MOON <br> <br>Click the orb to turn day into night and night into day. <br> <br> This uses jQuery to toggle classes.</div>
     </div>
-
   </div>
 
 </div>
-
-
 
 
     <footer id="contact-footer" class="app-footer">
@@ -190,6 +226,7 @@
       </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
