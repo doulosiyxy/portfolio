@@ -881,6 +881,6 @@ function vegReset() {
 //TRAMMEL
 $('#trammel-circle').on('click', function() {
   for(let x = 0; x < 8; x++) {
-    $('.trammel-line').delay(220).eq(x).animate({height: 'toggle'}, 500, "swing");
+    $('.trammel-line').delay(100).eq(x).animate({height: 'toggle'}, 500, "swing");
   }
 });
