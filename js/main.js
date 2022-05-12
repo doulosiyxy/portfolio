@@ -49,7 +49,7 @@ $('.three').on('click', function() {
   window.location.href='aana.html';
 });
 $('.four').on('click', function() {
-  window.open('http://www.wycliffechurch.org.uk', '_blank');
+  window.open('https://codepen.io/doulosiyxy', '_blank');
 });
 $('.projects-link').on('click', function() {
   window.location.href="index.html"
