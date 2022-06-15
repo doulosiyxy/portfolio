@@ -13,6 +13,9 @@
     <meta name="twitter:description" content="Cool apps and animations by me." />
     <meta name="twitter:image" content="https://doulosiyxy.github.io/portfolio/images/thumbnail.jpg" />
     <meta name="twitter:card" content="summary_large_image" />
+    <link
+  href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+  rel="stylesheet"  type='text/css'>
     <link rel="preload" href="assets/sprite_catwalk_small.png" as="image"/>
     <link rel="preload" href="assets/sprite_catsit_small.png" as="image"/>
     <link rel="preload" href="assets/sprite_catrun_small.png" as="image"/>
@@ -172,7 +175,8 @@
   <div  class="col-sm-4 app which-veg-when">
     <form id="veg-input" onsubmit="event.preventDefault(); whichVegWhen()">
       <h2>Which Veg When?</h2>
-      <input list="veg-datalist" type="text" id="vinput" name="vinput" placeholder="Select a vegetable or month..." required>
+      <div id="search-wrapper">
+      <input list="veg-datalist" type="text" id="vinput" name="vinput" placeholder="Type or select a vegetable or month" required>
         <datalist id="veg-datalist" style="height:5.1em;overflow:hidden">
           <option value="January">
           <option value="February">
@@ -187,12 +191,14 @@
           <option value="November">
           <option value="December">
         </datalist>
-      <button type="button" onclick="whichVegWhen()">Search</button>
+        <i id="search-icon" class="fa fa-search" onclick="whichVegWhen()"></i>
+      </div>
+      <!--<button type="button" onclick="whichVegWhen()">Search</button>-->
     </form>
     <div id="veg-output">
         <p id="veg-para"></p>
         <p id="veg" ></p>
-        <button type="button" id="search" onclick="vegReset()">Search Again</button>
+        <button type="button" id="search" onclick="vegReset()" class="fa fa-search"></button>
     </div>
     <i class="app-icon info material-icons">info</i>
     <div class="text-block">
