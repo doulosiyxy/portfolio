@@ -1465,14 +1465,15 @@ determines how the line moves in and out.*/
   border-radius: 100%;
   border: none;
   float: right;
-  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.15);
-  -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.15);
-  -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.15);
+
   transition: .2s ease;
 }
 
 .which-veg-when button:hover {
   transform: scale(1.1);
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.15);
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.15);
 }
 
 #search-wrapper {
