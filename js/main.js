@@ -745,8 +745,8 @@ function preloadVegValues() {
 
 //function to get results based on users input value
 function whichVegWhen() {
-$('#veg-input').hide(50);
-$('#veg-output').show(50);
+$('#veg-input').slideUp(100);
+$('#veg-output').show(200);
 var vegJsonFile = "https://doulosiyxy.github.io/portfolio/js/veg.json";
 var vegMonthInput = document.getElementById('vinput').value;
 vegMonthInput = vegMonthInput.toLowerCase();
