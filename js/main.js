@@ -745,8 +745,8 @@ function preloadVegValues() {
 
 //function to get results based on users input value
 function whichVegWhen() {
-$('#veg-input').slideUp(100);
-$('#veg-output').show(200);
+$('#veg-input').hide();
+$('#veg-output').show(0);
 var vegJsonFile = "https://doulosiyxy.github.io/portfolio/js/veg.json";
 var vegMonthInput = document.getElementById('vinput').value;
 vegMonthInput = vegMonthInput.toLowerCase();
@@ -871,8 +871,9 @@ function capitalise(word) { // receives vegName as argument
 
 
 function vegReset() {
-  $('#veg-input').show();
   $('#veg-output').hide();
+  $('#veg-input').show();
+
   document.getElementById('veg').innerHTML = "";
   document.getElementById('veg-para').innerHTML = "";
   document.getElementById('vinput').value = "";
