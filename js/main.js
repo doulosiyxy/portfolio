@@ -86,7 +86,8 @@ var x = 0;
 function titleFade() {
   setTimeout(function () {
   $('#about-title span').eq(x).fadeTo(500, 0);
-  $('.skl').delay(220).eq(x).fadeTo(1900, 1);
+  $('.skl').delay(190).eq(x).fadeTo(1900, 1);
+  $('#about-title-two').eq(x).fadeTo(500, .9);
   x++;
   //var stop = 14;
   if ( x < 14) {
