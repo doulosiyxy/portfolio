@@ -622,7 +622,7 @@ footer div {
   color: white;
   font-size: 17px;
   font-family: lato, roboto, sans-serif;
-  font-weight: 300;
+  font-weight: 600;
   text-align: center;
   padding: 5px;
   width: 100px;
@@ -630,7 +630,8 @@ footer div {
   z-index:100;
   cursor: pointer;
   border: none;
-  opacity: .8;
+  opacity: .9;
+  transition: .3s ease-in-out;
 }
 
 #skill-btn:hover {
