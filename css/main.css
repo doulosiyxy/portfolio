@@ -524,6 +524,10 @@ footer div {
   transition: .2s ease;
   z-index: 500;
   overflow: hidden;
+  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  color: white;
 }
 
 .project-figure:hover {
