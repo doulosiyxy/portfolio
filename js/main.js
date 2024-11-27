@@ -40,7 +40,7 @@ $('.titles').on('click', () => {
   window.location.href='index.html';
   });
 $('.one').on('click', function() {
-  window.open('https://github.com/doulosiyxy/freeCodeCamp/tree/main/FreeCodeCamp', '_blank');
+  window.open('https://github.com/doulosiyxy', '_blank');
 });
 $('.two').on('click', function() {
   window.open('https://doulosiyxy.github.io/theexegesist', '_blank');
