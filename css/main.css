@@ -2000,11 +2000,9 @@ determines how the line moves in and out.*/
     display: none; /* Hide the scrollbar */
 }
 
-
 .example {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
   width: 300px;
   height: 400px;
   padding:5px;
@@ -2016,13 +2014,14 @@ determines how the line moves in and out.*/
   background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
   backdrop-filter: blur(10px); /* Blur effect */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-  color: white;
+  color: black;
   font-family: lato, roboto, sans-serif;
   border-radius: 5px;
 }
 
 .example:hover {
   background: black;
+  color: white;
 }
 
 .example img {
