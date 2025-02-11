@@ -2009,7 +2009,7 @@ determines how the line moves in and out.*/
   border: 1px solid black;
   width: 300px;
   height: 400px;
-  padding: 10px;
+  padding: 15px;
   cursor: pointer;
   transition: .3s ease;
   z-index: 500;
@@ -2029,6 +2029,7 @@ determines how the line moves in and out.*/
 
 .example img {
   width: 100%;
+  border-radius: 5px;
 }
 
 .example h2, .example p {
