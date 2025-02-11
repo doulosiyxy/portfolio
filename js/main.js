@@ -43,7 +43,7 @@ $('.one').on('click', function() {
   window.open('https://github.com/doulosiyxy', '_blank');
 });
 $('.two').on('click', function() {
-  window.open('https://doulosiyxy.github.io/theexegesist', '_blank');
+  window.open(window.location.href='projects.html');
 });
 $('.three').on('click', function() {
   window.location.href='aana.html';
