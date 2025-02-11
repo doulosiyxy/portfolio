@@ -520,7 +520,6 @@ footer div {
 }
 
 .project-figure {
-  border: 1px solid black;
   display: block;
   opacity: 0;
   margin: 0 1%;
@@ -2005,11 +2004,10 @@ determines how the line moves in and out.*/
 .example {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  border: 1px solid black;
+  justify-content: space-evenly;
   width: 300px;
   height: 400px;
-  padding: 15px;
+  padding:5px;
   cursor: pointer;
   transition: .3s ease;
   z-index: 500;
@@ -2018,22 +2016,25 @@ determines how the line moves in and out.*/
   background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
   backdrop-filter: blur(10px); /* Blur effect */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-  color: black;
+  color: white;
   font-family: lato, roboto, sans-serif;
+  border-radius: 5px;
 }
 
 .example:hover {
-  color: white;
   background: black;
 }
 
 .example img {
   width: 100%;
-  border-radius: 5px;
 }
 
 .example h2, .example p {
   text-align: center;
+}
+
+.example p {
+  font-weight: 200;
 }
 
 #e-nav {
