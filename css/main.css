@@ -1781,9 +1781,9 @@ determines how the line moves in and out.*/
   opacity: 1;
 }
 
-.project-link {
-  text-decoration: none;
-}
+
+
+
 
 }
 @media screen and (max-width: 550px) {
@@ -2064,3 +2064,24 @@ determines how the line moves in and out.*/
     height: 320px;
   }
 }*/
+
+.project-link {
+  text-decoration: none  !important;
+}
+
+.project-link:link {
+  text-decoration: none; /* Default state */
+}
+
+.project-link:visited {
+  text-decoration: none; /* Visited state */
+}
+
+.project-link:hover {
+  text-decoration: none !important; /* Hover state */
+
+}
+
+.project-link:active {
+  text-decoration: none; /* Active state */
+}
