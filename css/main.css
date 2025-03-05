@@ -2065,7 +2065,7 @@ determines how the line moves in and out.*/
   }
 }*/
 
-.project-link {
+.project-link, .project-link h2, .project-link p  {
   text-decoration: none  !important;
   text-decoration-color: none;
 }
@@ -2080,7 +2080,7 @@ determines how the line moves in and out.*/
   text-decoration-color: none;
 }
 
-.project-link:hover {
+.project-link:hover, , .project-link h2:hover, .project-link p:hover {
   text-decoration: none !important; /* Hover state */
   text-decoration-color: none;
 }
