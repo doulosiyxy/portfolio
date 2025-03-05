@@ -2067,6 +2067,7 @@ determines how the line moves in and out.*/
 
 .project-link {
   text-decoration: none  !important;
+  text-decoration-color: transparent;
 }
 
 .project-link:link {
@@ -2079,6 +2080,7 @@ determines how the line moves in and out.*/
 
 .project-link:hover {
   text-decoration: none !important; /* Hover state */
+  text-decoration-color: transparent;
 
 }
 
