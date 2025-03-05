@@ -1780,6 +1780,11 @@ determines how the line moves in and out.*/
   width: 20%;
   opacity: 1;
 }
+
+.project-link {
+  text-decoration: none;
+}
+
 }
 @media screen and (max-width: 550px) {
 .skl {
