@@ -8,19 +8,20 @@
 }
 
 .exeg-icon {
-	opacity: 0.2;
+  opacity: 0.2;
 }
 
 html {
   background-color: black;
 }
 
-body, html {
+body,
+html {
   margin: 0 0;
-	padding: 0 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  padding: 0 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
   width: 100%;
   height: 100%;
   height: 100vh;
@@ -28,15 +29,15 @@ body, html {
   /*overflow: hidden;*/
 }
 
-.gradient-wrapper{
-  position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    padding:0;
-    margin:0;
-    overflow: auto;
+.gradient-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0;
+  overflow: auto;
 }
 
 .jumbotron {
@@ -61,7 +62,8 @@ header {
   transition-timing-function: ease-in-out;
 }
 
-header h2, header h3 {
+header h2,
+header h3 {
   color: white;
   font-size: 15px;
   margin: 0 0;
@@ -82,7 +84,7 @@ header h3 {
 }
 
 #a-nav {
-  margin-top:15px;
+  margin-top: 15px;
 }
 
 .titles {
@@ -153,7 +155,7 @@ header h3 {
   color: white;
   -webkit-text-shadow: 0.25px 0.25px 0.25px black;
   text-shadow: 0.25px 0.25px 0.25px black;
-  filter: drop-shadow(1px 1px 0.5px rgba(0,0,0,0.5));
+  filter: drop-shadow(1px 1px 0.5px rgba(0, 0, 0, 0.5));
   margin: auto 5%;
   position: absolute;
   top: 0;
@@ -167,6 +169,7 @@ header h3 {
 #about-title span {
   opacity: 0;
 }
+
 #about-title-two {
   font-family: lato, roboto, sans-serif;
   font-weight: bold;
@@ -190,7 +193,9 @@ header h3 {
   padding: 0 0px;
   margin: auto;
   position: absolute;
-  top: 0; left: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
   height: 100%;
   width: 40%;
   float: left;
@@ -230,7 +235,8 @@ header h3 {
   width: 100%;
 }
 
-#home-nav span a, #contact-nav span a {
+#home-nav span a,
+#contact-nav span a {
   color: white;
   margin-top: -25px;
   margin-bottom: -15px;
@@ -259,7 +265,9 @@ header h3 {
   cursor: pointer;
 }
 
-#home-nav span a:hover, #contact-nav span a:hover, #about-nav span a:hover {
+#home-nav span a:hover,
+#contact-nav span a:hover,
+#about-nav span a:hover {
   color: #337ab7;
   cursor: pointer;
 }
@@ -323,7 +331,7 @@ nav div {
   margin: auto;
 }
 
-.jumbotron div div{
+.jumbotron div div {
   display: block;
   margin: auto;
 }
@@ -335,10 +343,13 @@ nav div {
   font-family: lato, roboto, sans-serif;
   font-weight: bold;
   color: #fff;
-  -webkit-animation: h2 2s, fade 2s 8s; /* Safari 4+ */
-  -moz-animation:    h2 2s; /* Fx 5+ */
-  -o-animation:      h2 2s; /* Opera 12+ */
-  animation:         h2 2s;
+  -webkit-animation: h2 2s, fade 2s 8s;
+  /* Safari 4+ */
+  -moz-animation: h2 2s;
+  /* Fx 5+ */
+  -o-animation: h2 2s;
+  /* Opera 12+ */
+  animation: h2 2s;
   animation-timing-function: ease-in-out;
 }
 
@@ -356,99 +367,220 @@ nav div {
 }
 
 .jumbotron h3 span:first-of-type {
-  -webkit-animation: h3 5s; /* Safari 4+ */
-  -moz-animation:    h3 5s; /* Fx 5+ */
-  -o-animation:      h3 5s; /* Opera 12+ */
-  animation:         h3 5s;
+  -webkit-animation: h3 5s;
+  /* Safari 4+ */
+  -moz-animation: h3 5s;
+  /* Fx 5+ */
+  -o-animation: h3 5s;
+  /* Opera 12+ */
+  animation: h3 5s;
 }
 
 .jumbotron h3 span:nth-of-type(2) {
-  -webkit-animation: h3 6s; /* Safari 4+ */
-  -moz-animation:    h3 6s; /* Fx 5+ */
-  -o-animation:      h3 6s; /* Opera 12+ */
-  animation:         h3 6s;
+  -webkit-animation: h3 6s;
+  /* Safari 4+ */
+  -moz-animation: h3 6s;
+  /* Fx 5+ */
+  -o-animation: h3 6s;
+  /* Opera 12+ */
+  animation: h3 6s;
 }
 
 .jumbotron h3 span:last-of-type {
-  -webkit-animation: h3 7s; /* Safari 4+ */
-  -moz-animation:    h3 7s; /* Fx 5+ */
-  -o-animation:      h3 7s; /* Opera 12+ */
-  animation:         h3 7s;
+  -webkit-animation: h3 7s;
+  /* Safari 4+ */
+  -moz-animation: h3 7s;
+  /* Fx 5+ */
+  -o-animation: h3 7s;
+  /* Opera 12+ */
+  animation: h3 7s;
 
 }
 
 @keyframes h2 {
-  0% {opacity: 0; transform: scale(1.2);}
-  100% {opacity: 1; transform: scale(1.0);}
+  0% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1.0);
+  }
 }
 
 @-webkit-keyframes h2 {
-  0% {opacity: 0; transform: scale(1.2); -webkit-transform: scale(1.2); -moz-transform: scale(1.2);}
-  100% {opacity: 1; transform: scale(1.0); -webkit-transform: scale(1.0); -moz-transform: scale(1.0);}
+  0% {
+    opacity: 0;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+  }
 }
 
 @-moz-keyframes h2 {
-  0% {opacity: 0; transform: scale(1.2); -webkit-transform: scale(1.2); -moz-transform: scale(1.2);}
-  100% {opacity: 1; transform: scale(1.0); -webkit-transform: scale(1.0); -moz-transform: scale(1.0);}
+  0% {
+    opacity: 0;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+  }
 }
 
 @-o-keyframes h2 {
-  0% {opacity: 0; transform: scale(1.2); -webkit-transform: scale(1.2); -moz-transform: scale(1.2);}
-  100% {opacity: 1; transform: scale(1.0); -webkit-transform: scale(1.0); -moz-transform: scale(1.0);}
+  0% {
+    opacity: 0;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+  }
 }
 
 @keyframes h3 {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes h3 {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
+
 @-moz-keyframes h3 {
-  0% {opacity: 0; transform: scale(1.2); -webkit-transform: scale(1.2); -moz-transform: scale(1.2);}
-  100% {opacity: 1; transform: scale(1.0); -webkit-transform: scale(1.0); -moz-transform: scale(1.0);}
+  0% {
+    opacity: 0;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    -moz-transform: scale(1.0);
+  }
 }
+
 @-o-keyframes h3 {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  0% {opacity: 1;}
-  100% {opacity: 0;}
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 @-webkit-keyframes fade {
-  0% {opacity: 1;}
-  100% {opacity: 0;}
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
+
 @-moz-keyframes fade {
-  0% {opacity: 1;}
-  100% {opacity: 0;}
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
+
 @-o-keyframes fade {
-  0% {opacity: 1;}
-  100% {opacity: 0;}
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 @keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
+
 @-moz-keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
+
 @-o-keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 footer {
@@ -460,36 +592,36 @@ footer {
   z-index: 600;
 }
 
-#home-footer{
-margin-bottom: -100px;
+#home-footer {
+  margin-bottom: -100px;
 }
 
 #about-footer {
-opacity: 0;
+  opacity: 0;
 }
 
 footer img {
- display: inline-block;
- margin-top: 10px;
- margin-bottom: 10px;
- cursor: pointer;
- opacity: .7 !important;
- transition: .3s ease;
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  opacity: .7 !important;
+  transition: .3s ease;
 }
 
 footer img:hover {
- opacity: 1 !important;
- transform: scale(1.2);
+  opacity: 1 !important;
+  transform: scale(1.2);
 }
 
 footer img:first-of-type {
- margin-left: 65px;
- margin-right: 20px;
+  margin-left: 65px;
+  margin-right: 20px;
 }
 
 footer img:last-of-type {
- margin-right: 65px;
- margin-left: 20px;
+  margin-right: 65px;
+  margin-left: 20px;
 }
 
 footer div {
@@ -549,9 +681,12 @@ footer div {
   transition: .3s ease;
   z-index: 500;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
-  backdrop-filter: blur(10px); /* Blur effect */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  background: rgba(255, 255, 255, 0.2);
+  /* Semi-transparent background */
+  backdrop-filter: blur(10px);
+  /* Blur effect */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  /* Shadow for depth */
   color: black;
 }
 
@@ -618,12 +753,15 @@ footer div {
 .left {
   float: left;
 }
+
 .right {
   float: right;
 }
+
 .bottom {
   bottom: 0;
 }
+
 .top {
   top: 0;
   margin-top: 1%;
@@ -673,7 +811,7 @@ footer div {
   padding: 5px;
   width: 100px;
   height: 35px;
-  z-index:100;
+  z-index: 100;
   cursor: pointer;
   border: none;
   opacity: .9;
@@ -681,7 +819,7 @@ footer div {
 }
 
 #skill-btn:hover {
-   opacity: 1;
+  opacity: 1;
 }
 
 /*skills*/
@@ -698,6 +836,7 @@ footer div {
   opacity: 0;
   overflow: hidden;
 }
+
 .skl h3 {
   position: absolute;
   top: 40%;
@@ -725,9 +864,9 @@ footer div {
 }
 
 .skl-wrapper::-webkit-scrollbar {
-    width: 1px;
-    background: black;
-    display: none;
+  width: 1px;
+  background: black;
+  display: none;
 }
 
 #contact-text a {
@@ -756,10 +895,10 @@ footer div {
 }
 
 .apps {
- width: 100%;
- height: auto;
- overflow: scroll;
- background-color: black;
+  width: 100%;
+  height: auto;
+  overflow: scroll;
+  background-color: black;
 }
 
 .app-icon {
@@ -767,7 +906,8 @@ footer div {
   position: absolute;
   top: 0;
   right: 0;
-  margin: 10px 10px;;
+  margin: 10px 10px;
+  ;
   z-index: 2002;
 }
 
@@ -785,7 +925,7 @@ footer div {
   height: 100%;
   width: 100%;
   opacity: 1;
-  background-color: rgba(0,0,0,0.90);
+  background-color: rgba(0, 0, 0, 0.90);
   z-index: 2001;
   cursor: pointer;
 }
@@ -815,7 +955,7 @@ footer div {
 /*clock*/
 
 .even {
-    background-color: lightgrey;
+  background-color: lightgrey;
 }
 
 .odd {
@@ -834,7 +974,10 @@ footer div {
 
 #clockwrapper {
   position: absolute;
-  top: 0; left: 0; bottom: 0; right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   height: 100%;
   width: 100%;
 
@@ -842,52 +985,52 @@ footer div {
 
 #clock {
   width: 100%;
-    margin: auto;
-    top: 65%;
-    left: 50%;
-    position: absolute;
-    font-family: courier, monospace;
-    text-align: center;
-    color: white;
-    font-size: 200%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+  margin: auto;
+  top: 65%;
+  left: 50%;
+  position: absolute;
+  font-family: courier, monospace;
+  text-align: center;
+  color: white;
+  font-size: 200%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 #day {
   width: 100%;
-    margin: auto;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    font-family: courier, monospace;
-    text-align: center;
-    color: white;
-    font-size: 200%;
-    text-transform: uppercase;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+  margin: auto;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  font-family: courier, monospace;
+  text-align: center;
+  color: white;
+  font-size: 200%;
+  text-transform: uppercase;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 #date {
-    width: 100%;
-    margin: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-family: courier, monospace;
-    text-align: center;
-    color: white;
-    font-size: 290%;
-    text-transform: uppercase;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: courier, monospace;
+  text-align: center;
+  color: white;
+  font-size: 290%;
+  text-transform: uppercase;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 /*sunmoon*/
@@ -899,8 +1042,8 @@ footer div {
 }
 
 .sun-orb:hover {
-    border: 20px solid #f1c40f;
-    cursor: pointer;
+  border: 20px solid #f1c40f;
+  cursor: pointer;
 }
 
 .moon {
@@ -910,72 +1053,81 @@ footer div {
 }
 
 .moon:hover {
- border: 20px solid #eaeff2;
- cursor: pointer;
+  border: 20px solid #eaeff2;
+  cursor: pointer;
 }
 
 .night-sunmoon {
-    background-color: #2c3e50;
+  background-color: #2c3e50;
 }
 
 .day-sunmoon {
-    background-color: #37d8e6;
+  background-color: #37d8e6;
 }
 
 #orb {
-    width: 230px;
-    height: 230px;
-    border-radius: 100%;
-    margin: auto;
-    position: absolute;
-    display: inline-block;
-    top: 0; left: 0; bottom: 0; right: 0;
-    z-index: 2;
-    transition: .5s ease-in-out;
+  width: 230px;
+  height: 230px;
+  border-radius: 100%;
+  margin: auto;
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+  transition: .5s ease-in-out;
 }
 
 #sky {
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    top: 0; left: 0; bottom: 0; right: 0;
-    position: absolute;
-    z-index: 1;
-    transition: .5s ease-in-out;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: 1;
+  transition: .5s ease-in-out;
 }
 
 #moonspot1 {
   display: block;
-    position: absolute;
-    top: 10%; right: 15%;
-    height: 12%;
-    width: 12%;
-    border-radius: 100%;
-    transition: .5s ease-in-out;
+  position: absolute;
+  top: 10%;
+  right: 15%;
+  height: 12%;
+  width: 12%;
+  border-radius: 100%;
+  transition: .5s ease-in-out;
 }
 
 #moonspot2 {
   display: block;
   position: absolute;
-  top: 10%; left: 40%;
-    height: 25%;
-    width: 25%;
-    border-radius: 100%;
-    transition: .5s ease-in-out;
+  top: 10%;
+  left: 40%;
+  height: 25%;
+  width: 25%;
+  border-radius: 100%;
+  transition: .5s ease-in-out;
 }
 
 #moonspot3 {
   display: block;
   position: absolute;
-  bottom: 0%; left: 33%;
-    height: 50%;
-    width: 50%;
-    border-radius: 100%;
-    transition: .5s ease-in-out;
+  bottom: 0%;
+  left: 33%;
+  height: 50%;
+  width: 50%;
+  border-radius: 100%;
+  transition: .5s ease-in-out;
 }
 
 .visible {
-    background-color: #eaeff2;
+  background-color: #eaeff2;
 }
 
 /*orbitalmenu*/
@@ -987,7 +1139,10 @@ footer div {
 .orbital-wrapper {
   display: block;
   position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   margin: auto auto;
   width: 95%;
   height: 95%;
@@ -997,7 +1152,10 @@ footer div {
 #orbital-inner-wrapper {
   display: block;
   position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   margin: auto auto;
   width: 95%;
   height: 95%;
@@ -1015,7 +1173,7 @@ footer div {
   height: 120px;
   border-radius: 100%;
   background-color: #bdb058;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   z-index: 100;
 }
 
@@ -1040,7 +1198,7 @@ footer div {
   width: 65px;
   height: 65px;
   margin: auto;
-  box-shadow: 0 0 10px rgba(0,0,0,.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   z-index: 99;
 }
 
@@ -1106,7 +1264,7 @@ footer div {
   border: none;
   border-radius: 100%;
   transform: scale(0);
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   font-family: lato;
   font-size: 15px;
   font-weight: bold;
@@ -1152,6 +1310,7 @@ footer div {
   z-index: 200;
   overflow: hidden;
 }
+
 .overlay-sunrise {
   display: block;
   position: absolute;
@@ -1175,6 +1334,7 @@ footer div {
   background-color: black;
   opacity: 0;
 }
+
 .sky {
   position: relative;
   width: 100%;
@@ -1285,12 +1445,13 @@ button.sun-rise:hover {
   margin: auto auto;
   background: url('../assets/sprite_catwalk_small.png') 0 0 no-repeat;
   background-size: cover;
-  height: 150px; width: 300px;
+  height: 150px;
+  width: 300px;
   animation:
-  walk-cycle .9s steps(12) infinite;
+    walk-cycle .9s steps(12) infinite;
 }
 
-.tuna-sit  {
+.tuna-sit {
   display: block;
   position: absolute;
   top: 0;
@@ -1298,12 +1459,13 @@ button.sun-rise:hover {
   bottom: 0;
   left: 0;
   margin: auto auto;
-  height: 150px; width: 300px;
+  height: 150px;
+  width: 300px;
   background: url('../assets/sprite_catsit_small.png') 0 0 no-repeat;
   animation: sit-down 0.3s steps(5) forwards;
 }
 
-.tuna-walk  {
+.tuna-walk {
   display: block;
   position: absolute;
   top: 0;
@@ -1311,12 +1473,13 @@ button.sun-rise:hover {
   bottom: 0;
   left: 0;
   margin: auto auto;
-  height: 150px; width: 300px;
+  height: 150px;
+  width: 300px;
   background: url('../assets/sprite_catsit_small.png') 0 -751px no-repeat;
   animation: walk 0.3s steps(5) forwards;
 }
 
-.tuna-run  {
+.tuna-run {
   display: block;
   position: absolute;
   top: 0;
@@ -1324,53 +1487,71 @@ button.sun-rise:hover {
   bottom: 0;
   left: 0;
   margin: auto auto;
-  height: 150px; width: 300px;
+  height: 150px;
+  width: 300px;
   background: url('../assets/sprite_catrun_small.png') 0 0 no-repeat;
   animation: run-cycle-one 1s steps(12) 1,
-  run-cycle-two .6s steps(13) 1s infinite;
+    run-cycle-two .6s steps(13) 1s infinite;
 }
 
-  /*animation:
+/*animation:
     walk-cycle 1s steps(12) 4,
     sit-down steps(5) .5s 4s forwards;
   /* run sit-down after the walkcycle finishes
      using an animation delay.
      Use "steps(5)"; It should take about .5s. */
 
-  /* Don't forget to set the fill-mode to forwards! */
+/* Don't forget to set the fill-mode to forwards! */
 
 
 @keyframes walk-cycle {
   0% {
     background-position: 0 0;
   }
-  100% {background-position: 0 -1800px; }
+
+  100% {
+    background-position: 0 -1800px;
+  }
 }
 
 @keyframes sit-down {
-  0% { background-position: 0 0; }
-  100% {background-position: 0 -751px; }
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 0 -751px;
+  }
 }
 
 @keyframes walk {
   0% {
     background-position: 0 -751px;
   }
-  100% {background-position: 0 0; }
+
+  100% {
+    background-position: 0 0;
+  }
 }
 
 @keyframes run-cycle-one {
   0% {
     background-position: 0 0;
   }
-  100% {background-position: 0 -1795px; }
+
+  100% {
+    background-position: 0 -1795px;
+  }
 }
 
 @keyframes run-cycle-two {
   0% {
     background-position: -300px 0;
   }
-  100% {background-position: -300px -1945px; }
+
+  100% {
+    background-position: -300px -1945px;
+  }
 }
 
 .cat-btn-wrapper {
@@ -1400,6 +1581,7 @@ button.sun-rise:hover {
   color: rgba(0, 0, 0, 0.8);
   transition: .2s;
 }
+
 /*This code below creates the animated underline for cat buttons. It is created as a
 Pseudo element, using ::after, and made invisible by using the scaleX() function set to 0.
 The hover then changes this to 1 to make it appear. The transform origin property
@@ -1436,8 +1618,9 @@ determines how the line moves in and out.*/
 .app.which-veg-when {
   background-color: #bdb058;
 }
+
 .app.which-veg-when i {
-  color: rgba(255,255,255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .which-veg-when form {
@@ -1455,7 +1638,7 @@ determines how the line moves in and out.*/
 
 .which-veg-when h2 {
   margin-top: 30%;
-  color: rgba(62,57,26, 1);
+  color: rgba(62, 57, 26, 1);
   font-family: lato, roboto, sans-serif;
   font-weight: bold;
 }
@@ -1469,7 +1652,8 @@ determines how the line moves in and out.*/
   font-family: lato, roboto, sans-serif;
   border: 0;
   background: transparent;
-  outline: none; /*
+  outline: none;
+  /*
   box-shadow: 0px 0px 5px rgba(0,0,0,1) inset;
   -webkit-box-shadow: 0px 0px 5px rgba(0,0,0,1) inset;
   -moz-box-shadow: 0px 0px 5px rgba(0,0,0,1) inset;
@@ -1479,7 +1663,7 @@ determines how the line moves in and out.*/
 
 #veg-output {
   display: none;
-  color: rgba(62,57,26, 1);
+  color: rgba(62, 57, 26, 1);
   font-size: 13px;
   font-family: lato, roboto, sans-serif;
   font-weight: bold;
@@ -1508,7 +1692,7 @@ determines how the line moves in and out.*/
   width: 40px;
   height: 40px;
   padding: 10px 10px;
-  color: rgba(0,0,0,0.5);
+  color: rgba(0, 0, 0, 0.5);
   font-size: 25px;
   cursor: pointer;
   margin-right: 5px;
@@ -1521,9 +1705,9 @@ determines how the line moves in and out.*/
 
 .which-veg-when button:hover {
   transform: scale(1.1);
-  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.15);
-  -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.15);
-  -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.15);
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.15);
 }
 
 #search-wrapper {
@@ -1532,9 +1716,9 @@ determines how the line moves in and out.*/
   border-radius: 55px;
   display: flex;
   align-items: center;
-  box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15) inset, -6px -6px 10px -1px rgba(255,255,255, 0.7) inset;
-  -webkit-box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15) inset, -6px -6px 10px -1px rgba(255,255,255, 0.7) inset;
-  -moz-box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15) inset, -6px -6px 10px -1px rgba(255,255,255, 0.7) inset;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15) inset, -6px -6px 10px -1px rgba(255, 255, 255, 0.7) inset;
+  -webkit-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15) inset, -6px -6px 10px -1px rgba(255, 255, 255, 0.7) inset;
+  -moz-box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15) inset, -6px -6px 10px -1px rgba(255, 255, 255, 0.7) inset;
   padding-left: 10px;
   z-index: 99;
   background-color: white;
@@ -1547,7 +1731,7 @@ determines how the line moves in and out.*/
   width: 40px;
   height: 40px;
   padding: 10px 10px;
-  color: rgba(0,0,0,0.5);
+  color: rgba(0, 0, 0, 0.5);
   font-size: 25px;
   cursor: pointer;
   margin-right: 0px;
@@ -1561,8 +1745,9 @@ determines how the line moves in and out.*/
 .trammel {
   background: #1A383E;
 }
+
 .trammel i {
-  color: rgba(255,255,255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 #trammel-circle {
@@ -1572,7 +1757,10 @@ determines how the line moves in and out.*/
   margin: auto;
   position: absolute;
   display: inline-block;
-  top: 0; left: 0; bottom: 0; right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   z-index: 2;
   background-color: #000;
   transition: .2s ease-in-out;
@@ -1585,7 +1773,10 @@ determines how the line moves in and out.*/
 .dot-wrapper {
   display: block;
   position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   margin: auto auto;
   height: 230px;
   width: 17px;
@@ -1606,7 +1797,10 @@ determines how the line moves in and out.*/
 .trammel-line {
   display: none;
   position: absolute;
-  top: 0; bottom: 0; right: 0; left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   margin: auto;
   width: 2px;
   height: 230px;
@@ -1614,28 +1808,31 @@ determines how the line moves in and out.*/
   z-index: 1;
 }
 
-#line-two{
+#line-two {
   transform: rotate(22.5deg);
 }
 
-#line-three{
+#line-three {
   transform: rotate(45deg);
 }
 
-#line-four{
+#line-four {
   transform: rotate(67.5deg);
 }
 
-#line-five{
+#line-five {
   transform: rotate(90deg);
 }
-#line-six{
+
+#line-six {
   transform: rotate(112.5deg);
 }
-#line-seven{
+
+#line-seven {
   transform: rotate(135deg);
 }
-#line-eight{
+
+#line-eight {
   transform: rotate(157.5deg);
 }
 
@@ -1646,18 +1843,23 @@ determines how the line moves in and out.*/
 .dot-wrapper:nth-child(3) {
   transform: rotate(45deg);
 }
+
 .dot-wrapper:nth-child(4) {
   transform: rotate(67.5deg);
 }
+
 .dot-wrapper:nth-child(5) {
   transform: rotate(90deg);
 }
+
 .dot-wrapper:nth-child(6) {
   transform: rotate(112.5deg);
 }
+
 .dot-wrapper:nth-child(7) {
   transform: rotate(135deg);
 }
+
 .dot-wrapper:nth-child(8) {
   transform: rotate(157.5deg);
 }
@@ -1694,6 +1896,7 @@ determines how the line moves in and out.*/
   from {
     top: 0;
   }
+
   to {
     top: 215px;
   }
@@ -1702,154 +1905,171 @@ determines how the line moves in and out.*/
 /*additional media queries*/
 
 @media screen and (max-width: 1366px) {
-#about-footer div {
-  margin: auto 5px;
+  #about-footer div {
+    margin: auto 5px;
+  }
+
+  #about-footer img:first-of-type {
+    margin-left: 5px;
+    margin-right: 20px;
+  }
 }
-#about-footer img:first-of-type {
- margin-left: 5px;
- margin-right: 20px;
-}
-}
+
 @media screen and (max-width: 839px) {
-#about-img-wrap {
-  position: absolute;
-  bottom: 0;
-  /*background: url("../images/about-me.jpg") no-repeat 60% bottom;*/
-  background-size: cover;
-  width: 100%;
-  height: 93%;
-  margin: 0 0;
-  opacity: 0;
-  z-index: 300;
-  box-shadow: none;
- }
- #about-nav {
-  padding: 0 0;
+  #about-img-wrap {
+    position: absolute;
+    bottom: 0;
+    /*background: url("../images/about-me.jpg") no-repeat 60% bottom;*/
+    background-size: cover;
+    width: 100%;
+    height: 93%;
+    margin: 0 0;
+    opacity: 0;
+    z-index: 300;
+    box-shadow: none;
+  }
+
+  #about-nav {
+    padding: 0 0;
+  }
+
+  #about-nav nav {
+    margin-right: 0;
+    padding-right: 0;
+  }
 }
-#about-nav nav {
-  margin-right: 0;
-  padding-right: 0;
-}
-}
+
 @media screen and (max-width: 815px) and (max-height: 1000px) {
- #about-title, #about-title-two  {
 
-   font-size: 25px;
- }
- .project-figure {
-  display: block;
-  opacity: 0;
-  margin: 0 1%;
-  padding: 0 1px;
-  background: black;
-  position: relative;
-  width: 50%;
-  height: 100%;
-  max-width: 300px;
-  cursor: pointer;
-  transition: .2s ease;
-  z-index: 500;
-  overflow: hidden;
-  box-shadow: 0px 0px 20px #8d8d8d;
-  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
-  backdrop-filter: blur(10px); /* Blur effect */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Shadow for depth */
-  color: black;
+  #about-title,
+  #about-title-two {
+
+    font-size: 25px;
+  }
+
+  .project-figure {
+    display: block;
+    opacity: 0;
+    margin: 0 1%;
+    padding: 0 1px;
+    background: black;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    max-width: 300px;
+    cursor: pointer;
+    transition: .2s ease;
+    z-index: 500;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px #8d8d8d;
+    background: rgba(255, 255, 255, 0.2);
+    /* Semi-transparent background */
+    backdrop-filter: blur(10px);
+    /* Blur effect */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    /* Shadow for depth */
+    color: black;
+  }
+
+  .project-figure:hover {
+    background: black;
+    position: relative;
+    transform: scale(1.02);
+    opacity: 1;
+
+  }
+
+  .projects h2 {
+    color: white;
+    font-family: lato, roboto, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 10px 0;
+    margin-left: 10px;
+
+  }
+
+  .projects p {
+    max-width: 60%;
+    color: white;
+    font-size: 11px;
+    font-family: lato, roboto, sans-serif;
+    font-weight: 300;
+    margin: -2px 0;
+    padding-left: 15px;
+    float: left;
+  }
+
+  .project-figure img {
+    position: absolute;
+    display: block;
+    bottom: 5px;
+    right: 5px;
+    width: 20%;
+    opacity: 1;
+  }
+
+
+
+
+
 }
 
-.project-figure:hover {
-  background: black;
-  position: relative;
-  transform: scale(1.02);
-  opacity: 1;
-
-}
-
-.projects h2 {
-  color: white;
-  font-family: lato, roboto, sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin: 10px 0;
-  margin-left: 10px;
-
-}
-
-.projects p {
-  max-width: 60%;
-  color: white;
-  font-size: 11px;
-  font-family: lato, roboto, sans-serif;
-  font-weight: 300;
-  margin: -2px 0;
-  padding-left: 15px;
-  float: left;
-}
-
-.project-figure img {
-  position: absolute;
-  display: block;
-  bottom: 5px;
-  right: 5px;
-  width: 20%;
-  opacity: 1;
-}
-
-
-
-
-
-}
 @media screen and (max-width: 550px) {
-.skl {
-  display: block;
-  position: relative;
-  width: 100px;
-  height: 100px;
-  padding: 5px 5px;
-  margin: 2px auto;
-  opacity: 0;
-  overflow: hidden;
+  .skl {
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    padding: 5px 5px;
+    margin: 2px auto;
+    opacity: 0;
+    overflow: hidden;
+  }
+
+  #about-title,
+  #about-title-two {
+    font-size: 15px;
+  }
+
+  #skill-btn {
+    transform: rotate(270deg);
+    position: absolute;
+    left: -100px;
+    top: 50%;
+    bottom: 0;
+    margin: auto;
+    color: white;
+    font-size: 17px;
+    font-family: lato, roboto, sans-serif;
+    font-weight: 300;
+    text-align: center;
+    padding: 5px;
+    width: 100px;
+    height: 35px;
+    z-index: 100;
+    cursor: pointer;
+    border: none;
+    opacity: .8;
+  }
 }
-#about-title, #about-title-two {
-   font-size: 15px;
- }
- #skill-btn {
-  transform: rotate(270deg);
-  position: absolute;
-  left: -100px;
-  top: 50%;
-  bottom: 0;
-  margin: auto;
-  color: white;
-  font-size: 17px;
-  font-family: lato, roboto, sans-serif;
-  font-weight: 300;
-  text-align: center;
-  padding: 5px;
-  width: 100px;
-  height: 35px;
-  z-index:100;
-  cursor: pointer;
-  border: none;
-  opacity: .8;
- }
-}
+
 @media screen and (max-width: 668px) and (max-height: 414px) {
-#h-nav {
-  margin-top: -30px;
-}
-.projects p {
-  max-width: 60%;
-  color: white;
-  font-size: 10px;
-  font-family: lato, roboto, sans-serif;
-  font-weight: 300;
-  margin: -2px 0;
-  padding-left: 15px;
-  float: left;
-}
+  #h-nav {
+    margin-top: -30px;
+  }
+
+  .projects p {
+    max-width: 60%;
+    color: white;
+    font-size: 10px;
+    font-family: lato, roboto, sans-serif;
+    font-weight: 300;
+    margin: -2px 0;
+    padding-left: 15px;
+    float: left;
+  }
 }
 
 @media screen and (max-width: 1024px) and (max-height: 1366px) {
@@ -1884,15 +2104,17 @@ determines how the line moves in and out.*/
 
 @media screen and (max-width: 415px) and (max-height: 815px) {
 
-   
-    #contact-nav {
+
+  #contact-nav {
     padding: 4% 3%;
   }
+
   #contact-nav nav {
     margin-right: 10px;
     padding-right: 0;
   }
 }
+
 @media screen and (max-width: 767px) and (max-height: 415px) {
   #logo-icon {
     margin: 30px 30px;
@@ -1905,6 +2127,7 @@ determines how the line moves in and out.*/
     left: 0;
     right: 0;
   }
+
   .sun {
     top: 10%;
   }
@@ -1970,16 +2193,16 @@ determines how the line moves in and out.*/
   }
 
 
- .birds {
-   position: absolute;
-   top: initial;
-   bottom: 50%;
-   z-index: 104;
- }
+  .birds {
+    position: absolute;
+    top: initial;
+    bottom: 50%;
+    z-index: 104;
+  }
 
- .plane {
-   top: 30%;
- }
+  .plane {
+    top: 30%;
+  }
 
 }
 
@@ -2017,7 +2240,8 @@ determines how the line moves in and out.*/
 }
 
 .examples::-webkit-scrollbar {
-    display: none; /* Hide the scrollbar */
+  display: none;
+  /* Hide the scrollbar */
 }
 
 .example {
@@ -2025,15 +2249,18 @@ determines how the line moves in and out.*/
   flex-direction: column;
   width: 300px;
   height: 400px;
-  padding:5px;
+  padding: 5px;
   cursor: pointer;
   transition: .3s ease;
   z-index: 500;
   overflow: hidden;
   box-shadow: 0px 0px 20px #8d8d8d;
-  background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
-  backdrop-filter: blur(10px); /* Blur effect */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  background: rgba(255, 255, 255, 0.2);
+  /* Semi-transparent background */
+  backdrop-filter: blur(10px);
+  /* Blur effect */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  /* Shadow for depth */
   color: black;
   font-family: lato, roboto, sans-serif;
   border-radius: 5px;
@@ -2048,7 +2275,8 @@ determines how the line moves in and out.*/
   width: 100%;
 }
 
-.example h2, .example p {
+.example h2,
+.example p {
   text-align: center;
 }
 
@@ -2080,27 +2308,31 @@ determines how the line moves in and out.*/
   }
 }*/
 
-.examples a  {
-  text-decoration: none  !important;
+.examples a {
+  text-decoration: none !important;
   text-decoration-color: transparent;
 }
 
 .examples a:link {
-  text-decoration: none !important; /* Default state */
+  text-decoration: none !important;
+  /* Default state */
   text-decoration-color: transparent;
 }
 
 .examples a:visited {
-  text-decoration: none !important; /* Visited state */
+  text-decoration: none !important;
+  /* Visited state */
   text-decoration-color: transparent;
 }
 
 .examples a:hover {
-  text-decoration: none !important; /* Hover state */
+  text-decoration: none !important;
+  /* Hover state */
   text-decoration-color: transparent;
 }
 
 .examples a:active {
-  text-decoration: none !important; /* Active state */
+  text-decoration: none !important;
+  /* Active state */
   text-decoration-color: transparent;
 }
