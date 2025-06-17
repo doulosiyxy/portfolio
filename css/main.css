@@ -721,7 +721,7 @@ footer div {
   color: white;
   font-family: lato, roboto, sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   margin: 10px 0;
   margin-left: 10px;
 }
