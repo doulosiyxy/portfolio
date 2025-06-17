@@ -1984,7 +1984,7 @@ determines how the line moves in and out.*/
     font-family: lato, roboto, sans-serif;
     font-size: 15px;
     font-weight: 700;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     margin: 10px 0;
     margin-left: 10px;
 
