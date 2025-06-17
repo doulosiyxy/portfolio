@@ -6,7 +6,7 @@
       "month": "April",
       "time": "early",
       "months": "april"
-      },
+    },
     "plant": {
       "month": "April",
       "time": "late"
@@ -20,7 +20,7 @@
       "month": "",
       "time": "",
       "months": "february, march"
-      },
+    },
     "plant": {
       "month": "February & March",
       "time": "throughout"
@@ -34,7 +34,7 @@
       "month": "April",
       "time": "throughout",
       "months": "april"
-      },
+    },
     "plant": {
       "month": "April",
       "time": "early"
@@ -48,7 +48,7 @@
       "month": "late February & March",
       "time": "",
       "months": "february, march"
-      },
+    },
     "plant": {
       "month": "April & May",
       "time": "throughout"
@@ -62,7 +62,7 @@
       "month": "March & April",
       "time": "throughout",
       "months": "march, april"
-      },
+    },
     "plant": {
       "month": "",
       "time": ""
@@ -76,7 +76,7 @@
       "month": "May & June",
       "time": "throughout",
       "months": "may, june"
-      },
+    },
     "plant": {
       "month": "",
       "time": ""
@@ -90,7 +90,7 @@
       "month": "late May & June",
       "time": "",
       "months": "may, june"
-      },
+    },
     "plant": {
       "month": "",
       "time": ""
@@ -104,7 +104,7 @@
       "month": "April",
       "time": "throughout",
       "months": "april"
-      },
+    },
     "plant": {
       "month": "",
       "time": ""
@@ -118,7 +118,7 @@
       "month": "late April to June",
       "time": "",
       "months": "april, may, june"
-      },
+    },
     "plant": {
       "month": "",
       "time": ""
@@ -132,7 +132,7 @@
       "month": "late April to early May",
       "time": "",
       "months": "april, may"
-      },
+    },
     "plant": {
       "month": "late June to early July",
       "time": ""
@@ -146,14 +146,13 @@
       "month": "late March to early April",
       "time": "",
       "months": "march, april"
-      },
+    },
     "plant": {
       "month": "late May to early June",
       "time": ""
     },
     "harvest": "October to February"
   },
-
   {
     "id": 12,
     "name": "spring cabbages",
@@ -161,7 +160,7 @@
       "month": "late July to early August",
       "time": "",
       "months": "july, august"
-      },
+    },
     "plant": {
       "month": "late September to early October",
       "time": ""
@@ -175,7 +174,7 @@
       "month": "late March to early May",
       "time": "",
       "months": "march, april, may"
-      },
+    },
     "plant": {
       "month": "early May to late June",
       "time": ""
@@ -189,7 +188,7 @@
       "month": "late March (outdoors) or late February to early March (greenhouse)",
       "time": "",
       "months": "february, march"
-      },
+    },
     "plant": {
       "month": "June (outdoors) or late April to early May (greenhouse)",
       "time": ""
@@ -203,7 +202,7 @@
       "month": "April to June",
       "time": "",
       "months": "april, may, june"
-      },
+    },
     "plant": {
       "month": "",
       "time": ""
@@ -217,7 +216,7 @@
       "month": "April to early May",
       "time": "",
       "months": "april, may"
-      },
+    },
     "plant": {
       "month": "late June to July",
       "time": ""
@@ -231,7 +230,7 @@
       "month": "March",
       "time": "",
       "months": "march"
-      },
+    },
     "plant": {
       "month": "late May to early June",
       "time": ""
@@ -245,7 +244,7 @@
       "month": "late March to early April",
       "time": "",
       "months": "march, april"
-      },
+    },
     "plant": {
       "month": "late May to early June",
       "time": ""
@@ -259,7 +258,7 @@
       "month": "May to early July",
       "time": "",
       "months": "may, june, july"
-      },
+    },
     "plant": {
       "month": "",
       "time": ""
@@ -273,7 +272,7 @@
       "month": "late February to late April",
       "time": "",
       "months": "february, march, april"
-      },
+    },
     "plant": {
       "month": "late March to late May",
       "time": ""
@@ -287,14 +286,13 @@
       "month": "late April (indoors) or late May to early June (outdoors)",
       "time": "",
       "months": "april, may, june"
-      },
+    },
     "plant": {
       "month": "early June",
       "time": ""
     },
     "harvest": "August to September"
   },
-
   {
     "id": 21,
     "name": "endives",
@@ -302,14 +300,13 @@
       "month": "late April to August",
       "time": "",
       "months": "april, may, june, july, august"
-      },
+    },
     "plant": {
       "month": "",
       "time": ""
     },
     "harvest": "September to February"
   },
-
   {
     "id": 22,
     "name": "kale",
@@ -317,7 +314,7 @@
       "month": "May",
       "time": "",
       "months": "may"
-      },
+    },
     "plant": {
       "month": "July",
       "time": ""
@@ -331,7 +328,7 @@
       "month": "late April to July",
       "time": "",
       "months": "april, may, june, july"
-      },
+    },
     "plant": {
       "month": "",
       "time": ""
@@ -345,7 +342,7 @@
       "month": "late March to early April",
       "time": "",
       "months": "march, april"
-      },
+    },
     "plant": {
       "month": "June to early July",
       "time": ""
@@ -359,7 +356,7 @@
       "month": "February to December",
       "time": "",
       "months": "february, march, april, may, june, july, august, september, october, november, december"
-      },
+    },
     "plant": {
       "month": "",
       "time": ""
@@ -373,7 +370,7 @@
       "month": "late April (indoors) or late May to early June (outdoors)",
       "time": "",
       "months": "april, may, june"
-      },
+    },
     "plant": {
       "month": "early July when sown indoors",
       "time": ""
@@ -387,7 +384,7 @@
       "month": "late April (indoors) or late May to early June (outdoors)",
       "time": "",
       "months": "april, may, june"
-      },
+    },
     "plant": {
       "month": "early July when sown indoors",
       "time": ""
@@ -401,7 +398,7 @@
       "month": "late April (indoors) or late May to early June (outdoors)",
       "time": "",
       "months": "april, may, june"
-      },
+    },
     "plant": {
       "month": "early July when sown indoors",
       "time": ""
@@ -415,7 +412,7 @@
       "month": "late April (indoors) or late May to early June (outdoors)",
       "time": "",
       "months": "april, may, june"
-      },
+    },
     "plant": {
       "month": "early July when sown indoors",
       "time": ""
@@ -429,7 +426,7 @@
       "month": "late February to March & in August from seed",
       "time": "",
       "months": "february, march, april, august"
-      },
+    },
     "plant": {
       "month": "late March to early April from sets",
       "time": ""
@@ -443,7 +440,7 @@
       "month": "late February to March & in August from seed",
       "time": "",
       "months": "february, march, april, august"
-      },
+    },
     "plant": {
       "month": "late March to early April from sets",
       "time": ""
@@ -457,7 +454,7 @@
       "month": "March",
       "time": "",
       "months": "march"
-      },
+    },
     "plant": {
       "month": "",
       "time": ""
@@ -471,7 +468,7 @@
       "month": "February to July & late October to early November",
       "time": "",
       "months": "february, march, april, may, june, july, october, november"
-      },
+    },
     "plant": {
       "month": "",
       "time": ""
@@ -485,7 +482,7 @@
       "month": "",
       "time": "",
       "months": "march, april"
-      },
+    },
     "plant": {
       "month": "late March to April",
       "time": ""
@@ -499,7 +496,7 @@
       "month": "late March to early June",
       "time": "",
       "months": "march, april, may, june"
-      },
+    },
     "plant": {
       "month": "",
       "time": ""
@@ -513,7 +510,7 @@
       "month": "late February to March",
       "time": "",
       "months": "february, march"
-      },
+    },
     "plant": {
       "month": "",
       "time": ""
@@ -527,7 +524,7 @@
       "month": "late April",
       "time": "",
       "months": "april"
-      },
+    },
     "plant": {
       "month": "",
       "time": ""
@@ -541,7 +538,7 @@
       "month": "late April",
       "time": "",
       "months": "april"
-      },
+    },
     "plant": {
       "month": "",
       "time": ""
@@ -555,7 +552,7 @@
       "month": "late March to May, August & September",
       "time": "",
       "months": "march, april, may, august, september"
-      },
+    },
     "plant": {
       "month": "",
       "time": ""
@@ -569,7 +566,7 @@
       "month": "late May to early June",
       "time": "",
       "months": "may, june"
-      },
+    },
     "plant": {
       "month": "",
       "time": ""
@@ -583,7 +580,7 @@
       "month": "late April (indoors) & late May (outdoors) ",
       "time": "",
       "months": "april, may"
-      },
+    },
     "plant": {
       "month": "late May, early when sown indoors",
       "time": ""
@@ -597,7 +594,7 @@
       "month": "early January (heated) or late February to early March (cold)",
       "time": "",
       "months": "january, february, march"
-      },
+    },
     "plant": {
       "month": "late February to early March or late April to early May",
       "time": ""
@@ -611,7 +608,7 @@
       "month": "late March to early April",
       "time": "",
       "months": "march, april"
-      },
+    },
     "plant": {
       "month": "late May",
       "time": ""
@@ -625,7 +622,7 @@
       "month": "late March to April & late July to early August",
       "time": "",
       "months": "march, april, july, august"
-      },
+    },
     "plant": {
       "month": "",
       "time": ""
