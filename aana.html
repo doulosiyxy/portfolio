@@ -1,243 +1,267 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Apps and Animations</title>
-    <meta name="viewport" content="height=device-height, initial-scale=1, width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="Cool apps and animations by me.">
-    <meta property="og:title" content="Apps and Animations." />
-    <meta property="og:description" content="Cool apps and animations by me." />
-    <meta property="og:image" content="https://doulosiyxy.github.io/portfolio/images/thumbnail.jpg" />
-    <meta property="og:url" content="https://doulosiyxy.github.io/aanda.html" />
-    <meta name="twitter:title" content="Apps and Animations" />
-    <meta name="twitter:description" content="Cool apps and animations by me." />
-    <meta name="twitter:image" content="https://doulosiyxy.github.io/portfolio/images/thumbnail.jpg" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <link rel="preload" href="assets/sprite_catwalk_small.png" as="image"/>
-    <link rel="preload" href="assets/sprite_catsit_small.png" as="image"/>
-    <link rel="preload" href="assets/sprite_catrun_small.png" as="image"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700|Lato:100,200,300,400,700,800,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel='stylesheet' type='text/css' href='css/main.css'/>
-    <link rel="icon" type="image/png" href="https://www.dl.dropboxusercontent.com/s/19d2jggek8qh95k/favicon.png?dl=0"/>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  </head>
-  <body id="background" class="apps">
-    <div id="preload-hack" style="display:none">
-      <img src="assets/sprite_catwalk_small.png">
-      <img src="assets/sprite_catsit_small.png">
-      <img src="assets/sprite_catrun_small.png">
-    </div>
-    <header id="about-nav" class="app-header">
-      <div class="">
-        <nav class="col-sm-12">
-          <div id="a-nav">
-            <span><a href="index.html"><i class="glyphicon glyphicon-home"></i></a></span>
-            <span><a href="about.html"><i class="glyphicon glyphicon-user"></i></a></span>
-            <span class="projects-link" ><a><i class="glyphicon glyphicon-th-large"></i></a></span>
-            <span><a id="contact-link" href="contact.html"><i class="glyphicon glyphicon-envelope"></i></a></span>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <main>
-<!--sunrise-->
-<section>
-    <div class="apps">
-      <article>
-      <div  class="col-sm-12 sun-rise sun-rise-container">
-        <div id="container">
-          <div class="night sun-rise"></div>
-          <div class="sky sun-rise">
-            <img class="plane" src="assets/plane.png" loading="eager"/>
-          </div>
-          <div onclick="replayTwo()" class="sun sun-rise"><button class="sun-rise button-sun-rise" onclick="replayTwo()"><i class="sun-rise replay material-icons">replay</i></button></div>
-          <img class="tree" src="assets/tree.png" loading="eager"/>
-          <img class="birds" src="assets/birds.png" loading="eager">
-          <div class="ground"></div>
-          <div class="overlay-sunrise"></div>
-        </div>
-        <i class="app-icon info material-icons">info</i>
-        <div class="text-block">
-          <div class="app-text">ANIMATED SUNRISE <br> <br>I created this animation using the GSAP library. <br> <br> Click the sun to retart the animation. <br> <br> If the images fail to load in Safari, refresh until they load.</div>
-        </div>
-      </div>
-    </div>
-    </article>
-  </section>
-  <section>
-  <div class="apps">
 
-  <!--sprite animation-->
-    <article>
-    <div  class="col-sm-4 app cat">
-      <div id="tuna" class="tuna">
+<head>
+  <meta charset="utf-8">
+  <title>Apps and Animations</title>
+  <meta name="viewport"
+    content="height=device-height, initial-scale=1, width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Cool apps and animations by me.">
+  <meta property="og:title" content="Apps and Animations." />
+  <meta property="og:description" content="Cool apps and animations by me." />
+  <meta property="og:image" content="https://doulosiyxy.github.io/portfolio/images/thumbnail.jpg" />
+  <meta property="og:url" content="https://doulosiyxy.github.io/aanda.html" />
+  <meta name="twitter:title" content="Apps and Animations" />
+  <meta name="twitter:description" content="Cool apps and animations by me." />
+  <meta name="twitter:image" content="https://doulosiyxy.github.io/portfolio/images/thumbnail.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="preload" href="assets/sprite_catwalk_small.png" as="image" />
+  <link rel="preload" href="assets/sprite_catsit_small.png" as="image" />
+  <link rel="preload" href="assets/sprite_catrun_small.png" as="image" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link
+    href='https://fonts.googleapis.com/css?family=Roboto:300,400,700|Lato:100,200,300,400,700,800,400italic,700italic&subset=latin,latin-ext'
+    rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel='stylesheet' type='text/css' href='css/main.css' />
+  <link rel="icon" type="image/png" href="https://www.dl.dropboxusercontent.com/s/19d2jggek8qh95k/favicon.png?dl=0" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body id="background" class="apps">
+  <div id="preload-hack" style="display:none">
+    <img src="assets/sprite_catwalk_small.png">
+    <img src="assets/sprite_catsit_small.png">
+    <img src="assets/sprite_catrun_small.png">
+  </div>
+  <header id="about-nav" class="app-header">
+    <div class="">
+      <nav class="col-sm-12">
+        <div id="a-nav">
+          <span><a href="index.html"><i class="glyphicon glyphicon-home"></i></a></span>
+          <span><a href="about.html"><i class="glyphicon glyphicon-user"></i></a></span>
+          <span class="projects-link"><a><i class="glyphicon glyphicon-th-large"></i></a></span>
+          <span><a id="contact-link" href="contact.html"><i class="glyphicon glyphicon-envelope"></i></a></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!--sunrise-->
+    <section>
+      <div class="apps">
+        <article>
+          <div class="col-sm-12 sun-rise sun-rise-container">
+            <div id="container">
+              <div class="night sun-rise"></div>
+              <div class="sky sun-rise">
+                <img class="plane" src="assets/plane.png" loading="eager" />
+              </div>
+              <div onclick="replayTwo()" class="sun sun-rise"><button class="sun-rise button-sun-rise"
+                  onclick="replayTwo()"><i class="sun-rise replay material-icons">replay</i></button></div>
+              <img class="tree" src="assets/tree.png" loading="eager" />
+              <img class="birds" src="assets/birds.png" loading="eager">
+              <div class="ground"></div>
+              <div class="overlay-sunrise"></div>
+            </div>
+            <i class="app-icon info material-icons">info</i>
+            <div class="text-block">
+              <div class="app-text">ANIMATED SUNRISE <br> <br>I created this animation using the GSAP library. <br> <br>
+                Click the sun to retart the animation. <br> <br> If the images fail to load in Safari, refresh until
+                they load.</div>
+            </div>
+          </div>
       </div>
-      <div class="cat-btn-wrapper">
+      </article>
+    </section>
+    <section>
+      <div class="apps">
+
+        <!--sprite animation-->
+        <article>
+          <div class="col-sm-4 app cat">
+            <div id="tuna" class="tuna">
+            </div>
+            <div class="cat-btn-wrapper">
               <div onclick="catSit('tuna-sit')" id="sit-btn" class="cat-btns">SIT</div>
               <div onclick="catWalk('tuna-walk')" id="walk-btn" class="cat-btns">WALK</div>
               <div onclick="catRun('tuna-run')" id="run-btn" class="cat-btns">RUN</div>
-      </div>
-      <i class="app-icon info material-icons">info</i>
-      <div class="text-block">
-        <div class="app-text">TUNA CAT <br> <br>This is not a gif. <br> <br> I used CSS to animate a sprite. <br> <br> Imitating cell animation. <br> <br> Why not tell her to do something?<br> <br> Thanks to Rachel Nabors.</div>
-      </div>
-    </div>
-    </article>
-    <!--Trammel-->
-    <article>
-    <div  class="col-sm-4 app trammel">
-      <div id="trammel-circle" class="">
-        <div class="dot-wrapper">
-          <div id="dot-one" class="trammel-dot"></div>
-        </div>
-        <div class="dot-wrapper">
-          <div id="dot-two" class="trammel-dot"></div>
-        </div>
-        <div class="dot-wrapper">
-          <div id="dot-three" class="trammel-dot"></div>
-        </div>
-        <div class="dot-wrapper">
-          <div id="dot-four" class="trammel-dot"></div>
-        </div>
-        <div class="dot-wrapper">
-          <div id="dot-five" class="trammel-dot"></div>
-        </div>
-        <div class="dot-wrapper">
-          <div id="dot-six" class="trammel-dot"></div>
-        </div>
-        <div class="dot-wrapper">
-          <div id="dot-seven" class="trammel-dot"></div>
-        </div>
-        <div class="dot-wrapper">
-          <div id="dot-eight" class="trammel-dot"></div>
-        </div>
-        <div id="line-one" class="trammel-line"></div>
-        <div id="line-two" class="trammel-line"></div>
-        <div id="line-three" class="trammel-line"></div>
-        <div id="line-four" class="trammel-line"></div>
-        <div id="line-five" class="trammel-line"></div>
-        <div id="line-six" class="trammel-line"></div>
-        <div id="line-seven" class="trammel-line"></div>
-        <div id="line-eight" class="trammel-line"></div>
-      </div>
-      <i class="app-icon info material-icons">info</i>
-      <div class="text-block">
-        <div class="app-text">THE TRAMMEL OF ARCHIMEDES <br> <br>The dots appear to move in a circle. But each dot is moving along its own linear path. <br><br> Click the circle to show the paths. <br><br> Made with HTML, CSS animation, JS and math.</div>
-      </div>
-    </div>
-  </article>
-  <!--orbital-->
-  <article>
-  <div class="col-sm-4 app orbital">
-    <div class="orbital-wrapper">
-      <!--<div id="orbital-inner-wrapper">-->
-      <div id="orbitOne" class="orbit">
-        <div id="circleone" class="circleone small"><i class="orbiticon info material-icons white">info</i></div>
-        <div id="circletwo" class="circletwo small"><i class="orbiticon home material-icons">home</i></div>
-      </div>
-        <div id="orbitTwo" class="orbit">
-          <div id="circlethree" class="circlethree circleone small"><i class="orbiticon white stars material-icons explore">explore</i></div>
-          <div id="circlefour" class="circlefour circletwo small"><i class="orbiticon account_circle material-icons">account_circle</i></div>
-        </div>
-        <div id="orbitThree" class="orbit">
-          <div id="circlefive" class="circlefive circleone small"><i class="orbiticon white email material-icons">email</i></div>
-          <div id="circlesix" class="circlesix circletwo small"><i class="orbiticon stars material-icons">stars</i></div>
-        </div>
-        <div class="centre"></div>
-        <button id="orbitalbutton" onclick="replay()"><i class="orbiticon replay material-icons white">replay</i></button>
-      <!--</div>-->
+            </div>
+            <i class="app-icon info material-icons">info</i>
+            <div class="text-block">
+              <div class="app-text">TUNA CAT <br> <br>This is not a gif. <br> <br> I used CSS to animate a sprite. <br>
+                <br> Imitating cell animation. <br> <br> Why not tell her to do something?<br> <br> Thanks to Rachel
+                Nabors.</div>
+            </div>
+          </div>
+        </article>
+        <!--Trammel-->
+        <article>
+          <div class="col-sm-4 app trammel">
+            <div id="trammel-circle" class="">
+              <div class="dot-wrapper">
+                <div id="dot-one" class="trammel-dot"></div>
+              </div>
+              <div class="dot-wrapper">
+                <div id="dot-two" class="trammel-dot"></div>
+              </div>
+              <div class="dot-wrapper">
+                <div id="dot-three" class="trammel-dot"></div>
+              </div>
+              <div class="dot-wrapper">
+                <div id="dot-four" class="trammel-dot"></div>
+              </div>
+              <div class="dot-wrapper">
+                <div id="dot-five" class="trammel-dot"></div>
+              </div>
+              <div class="dot-wrapper">
+                <div id="dot-six" class="trammel-dot"></div>
+              </div>
+              <div class="dot-wrapper">
+                <div id="dot-seven" class="trammel-dot"></div>
+              </div>
+              <div class="dot-wrapper">
+                <div id="dot-eight" class="trammel-dot"></div>
+              </div>
+              <div id="line-one" class="trammel-line"></div>
+              <div id="line-two" class="trammel-line"></div>
+              <div id="line-three" class="trammel-line"></div>
+              <div id="line-four" class="trammel-line"></div>
+              <div id="line-five" class="trammel-line"></div>
+              <div id="line-six" class="trammel-line"></div>
+              <div id="line-seven" class="trammel-line"></div>
+              <div id="line-eight" class="trammel-line"></div>
+            </div>
+            <i class="app-icon info material-icons">info</i>
+            <div class="text-block">
+              <div class="app-text">THE TRAMMEL OF ARCHIMEDES <br> <br>The dots appear to move in a circle. But each dot
+                is moving along its own linear path. <br><br> Click the circle to show the paths. <br><br> Made with
+                HTML, CSS animation, JS and math.</div>
+            </div>
+          </div>
+        </article>
+        <!--orbital-->
+        <article>
+          <div class="col-sm-4 app orbital">
+            <div class="orbital-wrapper">
+              <!--<div id="orbital-inner-wrapper">-->
+              <div id="orbitOne" class="orbit">
+                <div id="circleone" class="circleone small"><i class="orbiticon info material-icons white">info</i>
+                </div>
+                <div id="circletwo" class="circletwo small"><i class="orbiticon home material-icons">home</i></div>
+              </div>
+              <div id="orbitTwo" class="orbit">
+                <div id="circlethree" class="circlethree circleone small"><i
+                    class="orbiticon white stars material-icons explore">explore</i></div>
+                <div id="circlefour" class="circlefour circletwo small"><i
+                    class="orbiticon account_circle material-icons">account_circle</i></div>
+              </div>
+              <div id="orbitThree" class="orbit">
+                <div id="circlefive" class="circlefive circleone small"><i
+                    class="orbiticon white email material-icons">email</i></div>
+                <div id="circlesix" class="circlesix circletwo small"><i
+                    class="orbiticon stars material-icons">stars</i></div>
+              </div>
+              <div class="centre"></div>
+              <button id="orbitalbutton" onclick="replay()"><i
+                  class="orbiticon replay material-icons white">replay</i></button>
+              <!--</div>-->
 
-    </div>
-    <i class="app-icon info material-icons">info</i>
-    <div class="text-block">
-      <div class="app-text">ORBITAL MENU <br> <br> This dynamic, orbital menu is animated using GSAP. </div>
-    </div>
-  </div>
-  </article>
-</section>
-  <!--clock-->
-<section>
-  <article>
-  <div id="all" class="col-sm-4 even app">
-    <div id="clockwrapper">
-      <div id="day"></div>
-      <div id="date"></div>
-      <div id="clock"></div>
-      <i class="app-icon info material-icons">info</i>
-      <div class="text-block">
-        <div class="app-text">DIGITAL CLOCK <br> <br> This digital clock uses JavaScript to output to HMTL.</div>
-      </div>
-    </div>
-  </div>
+            </div>
+            <i class="app-icon info material-icons">info</i>
+            <div class="text-block">
+              <div class="app-text">ORBITAL MENU <br> <br> This dynamic, orbital menu is animated using GSAP. </div>
+            </div>
+          </div>
+        </article>
+    </section>
+    <!--clock-->
+    <section>
+      <article>
+        <div id="all" class="col-sm-4 even app">
+          <div id="clockwrapper">
+            <div id="day"></div>
+            <div id="date"></div>
+            <div id="clock"></div>
+            <i class="app-icon info material-icons">info</i>
+            <div class="text-block">
+              <div class="app-text">DIGITAL CLOCK <br> <br> This digital clock uses JavaScript to output to HMTL.</div>
+            </div>
+          </div>
+        </div>
 
-  <!--whichVegWhen-->
+        <!--whichVegWhen-->
 
-  <div  class="col-sm-4 app which-veg-when">
-    <form id="veg-input" onsubmit="event.preventDefault(); whichVegWhen()">
-      <h2>Which Veg When?</h2>
-      <div id="search-wrapper">
-      <input list="veg-datalist" type="text" id="vinput" name="vinput" placeholder="Type or select a vegetable or month" required>
-        <datalist id="veg-datalist" style="height:5.1em;overflow:hidden">
-          <option value="January">
-          <option value="February">
-          <option value="March">
-          <option value="April">
-          <option value="May">
-          <option value="June">
-          <option value="July">
-          <option value="August">
-          <option value="September">
-          <option value="October">
-          <option value="November">
-          <option value="December">
-        </datalist>
-        <i id="search-icon" class="material-icons" onclick="whichVegWhen()">search</i>
-      </div>
-      <!--<button type="button" onclick="whichVegWhen()">Search</button>-->
-    </form>
-    <div id="veg-output">
-        <p id="veg-para"></p>
-        <p id="veg" ></p>
-        <button type="button" id="search" class="material-icons" onclick="vegReset()">search</button>
-    </div>
-    <i class="app-icon info material-icons">info</i>
-    <div class="text-block">
-      <div class="app-text">WHICH VEG WHEN? <br> <br>Find out which vegetables to sow, plant and harvest when. <br> <br> This app outputs JSON to HTML using JavaScript & jQuery. <br> <br> Check out my new, React version on my Codepen.</div>
-    </div>
-  </div>
+        <div class="col-sm-4 app which-veg-when">
+          <form id="veg-input" onsubmit="event.preventDefault(); whichVegWhen()">
+            <h2>Which Veg When?</h2>
+            <div id="search-wrapper">
+              <input list="veg-datalist" type="text" id="vinput" name="vinput"
+                placeholder="Type or select a vegetable or month" required>
+              <datalist id="veg-datalist" style="height:5.1em;overflow:hidden">
+                <option value="January">
+                <option value="February">
+                <option value="March">
+                <option value="April">
+                <option value="May">
+                <option value="June">
+                <option value="July">
+                <option value="August">
+                <option value="September">
+                <option value="October">
+                <option value="November">
+                <option value="December">
+              </datalist>
+              <i id="search-icon" class="material-icons" onclick="whichVegWhen()">search</i>
+            </div>
+            <!--<button type="button" onclick="whichVegWhen()">Search</button>-->
+          </form>
+          <div id="veg-output">
+            <p id="veg-para"></p>
+            <p id="veg"></p>
+            <button type="button" id="search" class="material-icons" onclick="vegReset()">search</button>
+          </div>
+          <i class="app-icon info material-icons">info</i>
+          <div class="text-block">
+            <div class="app-text">WHICH VEG WHEN? <br> <br>Find out which vegetables to sow, plant and harvest when.
+              <br> <br> This app outputs JSON to HTML using JavaScript & jQuery. <br> <br> Check out my new, React
+              version on my Codepen.</div>
+          </div>
+        </div>
 
-<!--sunmoon-->
+        <!--sunmoon-->
 
-  <div  class="col-sm-4 app">
-    <div id="orb" class= "sun-orb">
-      <div id= "moonspot1"></div>
-      <div id= "moonspot2"></div>
-      <div id= "moonspot3"></div>
-    </div>
-    <div id="sky" class="day-sunmoon"></div>
-    <i class="app-icon info material-icons">info</i>
-    <div class="text-block">
-      <div class="app-text">SUN MOON <br> <br>Click the orb to turn day into night and night into day. <br> <br> This uses jQuery to toggle classes.</div>
-    </div>
-  </div>
-</div>
-</article>
-</section>
-</main>
-<footer id="contact-footer" class="app-footer">
+        <div class="col-sm-4 app">
+          <div id="orb" class="sun-orb">
+            <div id="moonspot1"></div>
+            <div id="moonspot2"></div>
+            <div id="moonspot3"></div>
+          </div>
+          <div id="sky" class="day-sunmoon"></div>
+          <i class="app-icon info material-icons">info</i>
+          <div class="text-block">
+            <div class="app-text">SUN MOON <br> <br>Click the orb to turn day into night and night into day. <br> <br>
+              This uses jQuery to toggle classes.</div>
+          </div>
+        </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer id="contact-footer" class="app-footer">
     <div>
       <img class="twitter" width="20px" height="20px" src="assets/twitter.svg">
       <img class="linkedin" width="20px" height="20px" src="assets/linkedin.svg">
       <img class="github" width="20px" height="20px" src="assets/github.svg">
     </div>
-</footer>
+  </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src='js/main.js'></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src='js/main.js'></script>
+</body>
+
 </html>
